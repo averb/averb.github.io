@@ -1,0 +1,63 @@
+body
+  min-width: 320px
+  margin: auto
+  font-family: $mainFont
+  color: $fontColor
+  font-size: $fontSize
+  font-weight: $fontWeight
+  line-height: $lineHeight
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+  position: relative
+  background-color: $backgroundColor
+
+main
+  flex-grow: 1
+
+h1, h2, h3, h4, h5
+  color: $fontColor
+  font-weight: 500
+
+h1
+  font-size: $h1Size
+  line-height: $h1LineH
+
+h2
+  font-size: $h2Size
+  line-height: $h2LineH
+
+h3
+  font-size: $h3Size
+  line-height: $h3LineH
+
+h4
+  font-size: $h4Size
+  line-height: $h4LineH
+
+h5
+  font-size: $h5Size
+  line-height: $h5LineH
+
+strong
+  font-weight: 700
+
+button
+  border: 0
+  padding: 0
+  outline: 0
+  cursor: pointer
+
+a
+  display: inline-block
+  color: $linkColor
+  text-decoration: underline
+  transition: all .1s ease
+  cursor: pointer
+
+  &:hover
+    text-decoration: none
+  &:active
+    text-decoration: none
+  &:focus
+    text-decoration: none
