@@ -1,0 +1,41 @@
+.main-header
+  // position: fixed
+  top: 0
+  left: 0
+  right: 0
+
+  &__inner
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+
+.header-nav
+  &__list
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin-left: -$spacer
+    margin-right: -$spacer
+
+    &-item
+
+    &-link
+      display: block
+      text-transform: uppercase
+      text-decoration: none
+      padding: $spacer
+      font-weight: bold
+
+      & svg
+        display: block
+        fill: currentColor
+        width: 25px
+        height: 25px
+
+      &:hover
+        text-shadow: 0 3px 2px rgba(#D3D2CF, 0.7)
+        transform: translateY(-3px)
+
+        & svg
+          filter: drop-shadow(0 3px 2px rgba(#D3D2CF, 0.7))
