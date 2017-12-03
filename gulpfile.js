@@ -57,7 +57,7 @@ gulp.task('server', function () {
 
 // sass
 gulp.task('sass', function () {
-	return gulp.src('sass/main.sass')
+	return gulp.src('build/sass/main.sass')
 		.pipe(sassGlob())
 		.pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
 		.pipe(autoprefixer())
@@ -67,7 +67,7 @@ gulp.task('sass', function () {
 
 // Watcher
 gulp.task('watch', function () {
-	gulp.watch('sass/**/*.sass', ['sass']);
+	gulp.watch('build/sass/**/*.sass', ['sass']);
 	//gulp.watch('css/main.css', ['gcmq']);
 	gulp.watch('build/**/*.html', ['import']);
 });

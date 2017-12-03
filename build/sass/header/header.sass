@@ -1,8 +1,10 @@
 .main-header
-  // position: fixed
+  position: fixed
   top: 0
   left: 0
   right: 0
+  z-index: 99
+  background-color: rgba($light, .7)
 
   &__inner
     display: flex
@@ -24,10 +26,9 @@
       display: block
       text-transform: uppercase
       text-decoration: none
-      padding: $spacer
-      font-weight: bold
+      padding: $spacerSm $spacer
 
-      & svg
+      & .social
         display: block
         fill: currentColor
         width: 25px
@@ -36,6 +37,13 @@
       &:hover
         text-shadow: 0 3px 2px rgba(#D3D2CF, 0.7)
         transform: translateY(-3px)
+        color: $blue
 
-        & svg
+        & .social, & .logo
           filter: drop-shadow(0 3px 2px rgba(#D3D2CF, 0.7))
+
+.logo
+  display: block
+  width: 80px
+  height: 80px
+  fill: currentColor

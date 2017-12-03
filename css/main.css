@@ -77,34 +77,22 @@ main {
           flex-grow: 1;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3 {
   color: #575352;
   font-weight: 500;
+  line-height: 1.4;
 }
 
 h1 {
-  font-size: 30px;
-  line-height: 36px;
+  font-size: 40px;
 }
 
 h2 {
-  font-size: 28px;
-  line-height: 34px;
+  font-size: 34px;
 }
 
 h3 {
-  font-size: 24px;
-  line-height: 1;
-}
-
-h4 {
-  font-size: 23px;
-  line-height: 1;
-}
-
-h5 {
-  font-size: 20px;
-  line-height: 1;
+  font-size: 26px;
 }
 
 strong {
@@ -139,10 +127,68 @@ a:focus {
   text-decoration: none;
 }
 
+section {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.about__avatar {
+  max-width: 40%;
+}
+
+.lid {
+  height: 100vh;
+  position: relative;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.lid__triangels {
+  height: 100vh;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  margin-right: 24px;
+  fill: currentColor;
+}
+
+.lid__triangels-wrap {
+  position: absolute;
+  top: 0;
+  right: 40%;
+}
+
+.lid__titles {
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.2;
+  position: absolute;
+  top: 31vh;
+  left: 66%;
+  white-space: nowrap;
+}
+
+.lid__title {
+  font-size: 12vh;
+}
+
+.lid__subtitle {
+  font-size: 8vh;
+}
+
+.lid__text {
+  font-size: 4vh;
+  font-weight: 100;
+  padding-top: 56.5vh;
+  padding-left: 60%;
+}
+
 .main-header {
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 99;
+  background-color: rgba(251, 251, 251, 0.7);
 }
 
 .main-header__inner {
@@ -174,11 +220,10 @@ a:focus {
   display: block;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 24px;
-  font-weight: bold;
+  padding: 12px 24px;
 }
 
-.header-nav__list-link svg {
+.header-nav__list-link .social {
   display: block;
   fill: currentColor;
   width: 25px;
@@ -189,11 +234,19 @@ a:focus {
   text-shadow: 0 3px 2px rgba(211, 210, 207, 0.7);
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+  color: #2196f3;
 }
 
-.header-nav__list-link:hover svg {
+.header-nav__list-link:hover .social, .header-nav__list-link:hover .logo {
   -webkit-filter: drop-shadow(0 3px 2px rgba(211, 210, 207, 0.7));
           filter: drop-shadow(0 3px 2px rgba(211, 210, 207, 0.7));
+}
+
+.logo {
+  display: block;
+  width: 80px;
+  height: 80px;
+  fill: currentColor;
 }
 
 /*Buttons*/
@@ -207,7 +260,7 @@ a:focus {
   padding: 8px 25px;
   margin-bottom: 0;
   vertical-align: middle;
-  line-height: 1.5;
+  line-height: 1;
   cursor: pointer;
   text-align: center;
   background-color: #ccc;
