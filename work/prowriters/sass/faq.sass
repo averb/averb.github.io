@@ -1,0 +1,52 @@
+.faq
+	.def-width
+		max-width: 812px
+	h1
+		margin-bottom: 26px
+.faq__accordion
+	h6
+		outline: 0
+		cursor: pointer
+		background-color: #f0f0f0
+		border-radius: 3px
+		padding: 8px 26px 8px 50px
+		transition: padding .1s
+		margin-top: 16px
+		text-transform: none
+		position: relative
+		font-size: 16px
+		font-weight: 600
+		text-align: left
+		z-index: 5
+		&:hover
+			color: #4faf4f
+			background-color: #f0f0f0
+			&:before
+				background-image: url(../images/svg/faq_plus_hover.svg)
+		&:before
+			content: ""
+			width: 15px
+			height: 15px
+			position: absolute
+			top: 50%
+			left: 15px
+			margin-top: -8px
+			transition: transform .2s
+			background:
+				image: url(../images/svg/faq_plus.svg)
+				repeat: no-repeat
+				size: 15px 15px
+		&.ui-state-active
+			background-color: #4faf4f
+			color: #fff
+			transition: padding .1s
+			&:before
+				background-image: url(../images/svg/faq_minus.svg)
+
+	.ui-accordion-content
+		background-color: #fff
+		border: 1px solid #e1e1e1
+		border-radius: 0 0 3px 3px
+		padding: 14px 22px
+		position: relative
+		top: -3px

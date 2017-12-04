@@ -1,0 +1,190 @@
+// main: main.sass
+
+body
+	max-width: 1920px
+	min-width: 320px
+	margin: 0 auto
+	font-family: "Open sans"
+	color: #333
+	font-size: 16px
+	font-weight: 400
+	line-height: 30px
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+	position: relative
+	background-color: #fff
+	&.no-overflow
+		overflow: hidden
+	&.no-overflow-nav
+		overflow: hidden
+
+main
+	flex-grow: 1
+	padding-top: 56px
+	padding-bottom: 56px
+
+h1, h2.like-h1
+	font-size: 30px
+	font-weight: 600
+	line-height: 32px
+	text-transform: uppercase
+
+h2
+	font-size: 24px
+	font-weight: 600
+	line-height: 30px
+	text-transform: uppercase
+
+h3
+	font-size: 18px
+	font-weight: 400
+	line-height: 30px
+
+h4
+	font-size: 16px
+	font-weight: 400
+	line-height: 22px
+
+h5
+	font-size: 14px
+	font-weight: 400
+	line-height: 20px
+
+strong
+	font-weight: 700
+
+button
+	border: 0
+	padding: 0
+	outline: 0
+	cursor: pointer
+
+a, .smth-more
+	display: inline-block
+	color: #46b680
+	text-decoration: underline
+	transition: .1s
+	cursor: pointer
+	&:hover
+		text-decoration: none
+	&:active
+		text-decoration: none
+	&:focus
+		text-decoration: none
+
+ol.def-ol
+	list-style: none
+	counter-reset: li
+	padding-left: 35px
+	margin: 30px 0
+	li
+		position: relative
+		counter-increment: li
+		line-height: 24px
+		margin-bottom: 14px
+		&:last-child
+			margin-bottom: 0
+		&::before
+			content: counter(li)". "
+			color: #42b574
+			font-size: 18px
+			font-weight: 700
+			position: absolute
+			width: 16px
+			left: -35px
+
+ul.shlyapa-list
+	text-align: left
+	margin: 30px 0
+	li
+		position: relative
+		line-height: 26px
+		padding-left: 35px
+		margin-bottom: 14px
+		&:last-child
+			margin-bottom: 0
+		&:before
+			content: ""
+			position: absolute
+			top: 6px
+			left: 0
+			width: 26px
+			height: 18px
+			background:
+				image: url("../images/svg/iconcap.svg")
+				size: 100%
+				repeat: no-repeat
+
+		span
+			color: #46b680
+			font-weight: 700
+
+.def-width
+	max-width: 1140px
+	margin: auto
+	padding-left: 15px
+	padding-right: 15px
+
+.show-in-mob,
+.show-in-tab
+	display: none
+
+.flex
+	display: flex
+
+.with-sidebar
+	display: flex
+	align-items: flex-start
+
+.near-sidebar
+	flex-grow: 7
+	max-width: 702px
+
+.sidebar
+	flex-grow: 5
+	max-width: 380px
+
+.title
+	margin-bottom: 30px
+
+.home-main__smth
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 0
+
+::selection
+	color: #fff
+	background: #0091ef
+::-moz-selection
+	color: #fff
+	background: #0091ef
+
+::-webkit-input-placeholder
+   color: #6d6d6d
+
+:-moz-placeholder
+   color: #6d6d6d
+
+
+::-moz-placeholder
+   color: #6d6d6d
+
+:-ms-input-placeholder
+   color: #6d6d6d
+
+input[type="text"]
+	border: 0
+	outline: 0
+	-webkit-appearance: none
+	height: 42px
+	width: 100%
+	box-sizing: border-box
+	color: #6d6d6d
+	font-size: 14px
+	font-weight: 400
+	padding: 0 10px
+	border-radius: 6px
+	border: 2px solid #8acfa8
+	background-color: #f6f6f6

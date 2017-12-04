@@ -1,0 +1,306 @@
+// main: main.sass
+
+.top-offer
+    position: relative
+    background:
+        color: #42b574
+        image: linear-gradient(-30deg, rgba(66, 181, 116, 1) 0%, rgba(103, 196, 239, .5) 100%)
+    .def-width
+        padding-top: 7px
+        padding-bottom: 7px
+        padding-right: 40px
+    p
+        color: #fff
+        font-size: 15px
+        text-align: center
+        line-height: 25px
+        span
+            font-weight: 700
+            text-transform: uppercase
+        a
+            background-color: #ff4141
+            border-radius: 6px
+            color: #fff
+            font-size: 15px
+            text-transform: uppercase
+            text-decoration: none
+            font-weight: 700
+            padding: 0 8px
+            &:hover
+                background-color: #ff0000
+
+.top-offer__close
+    position: absolute
+    top: 50%
+    right: 20px
+    margin-top: -6px
+    cursor: pointer
+    img
+        display: block
+
+.home-header
+    .menu-header
+        border-bottom: 0
+        // &.fixed
+        //     border-bottom: 2px solid #daf0e6
+
+.phones-header
+    background-color: #333
+    .def-width
+        padding-top: 7px
+        padding-bottom: 7px
+    ul
+        justify-content: flex-end
+    li
+        margin-left: 48px
+        line-height: 24px
+        &:last-child
+            a
+                img
+                    top: 3px
+    a
+        color: #fff
+        text-decoration: none
+        text-transform: uppercase
+        font-size: 12px
+        font-weight: 600
+        img
+            margin-right: 10px
+            position: relative
+            top: 2px
+
+.menu-header
+    background-color: #fff
+    border-bottom: 2px solid #daf0e6
+    &.fixed
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+        z-index: 999
+        .menu-header__logo
+            a
+                width: 79px
+                height: 40px
+                background-size: 79px 40px
+    .def-width
+        align-items: center
+        justify-content: space-between
+        padding-top: 6px
+        padding-bottom: 6px
+
+
+.menu-header__logo
+    a
+        display: block
+        width: 118px
+        height: 60px
+        background:
+            image: url("../images/logo.png")
+            repeat: no-repeat
+            size: 118px 60px
+        &:hover
+            background-image: url("../images/logohover.png")
+
+.main-nav
+    > ul
+        margin-right: -8px
+        > li
+            margin: 0 8px
+            line-height: 24px
+            &:last-child
+                margin-right: 0
+            a
+                color: #333
+                font-size: 18px
+                text-decoration: none
+                padding: 2px 12px
+                &:hover
+                    color: #42b574
+                &.active
+                    color: #42b574
+                &.order-nav
+                    color: #fff
+                    background-color: #46b680
+                    border-radius: 5px
+                    margin-left: 12px
+                    &:hover
+                        color: #46b680
+                        background-color: transparent
+
+/*Modal phones*/
+.modal-frame
+	display: none
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	margin: auto
+	z-index: 50
+	display: table
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	text-align: center
+	visibility: hidden
+	z-index: 10000
+	height: 100vh
+
+	&.state-appear
+		visibility: visible
+		background-color: rgba(4, 4, 4, 0.5)
+
+		.modal-inset
+			animation: modalComeIn 0.25s ease
+			visibility: visible
+
+		.modal-body
+			opacity: 1
+			transform: translateY(0) scale(1, 1)
+
+	&.state-leave
+		visibility: visible
+
+		.modal-inset
+			animation: modalHeadOut 0.35s ease 0.1s
+			visibility: visible
+
+		.modal-body
+			opacity: 0
+			transition-delay: 0s
+			transition-duration: 0.35s
+			transition-timing-function: ease
+			transform: translateY(25px)
+
+@-moz-document url-prefix()
+	.modal-frame
+		height: calc(100% - 55px)
+
+.modal
+	display: block
+	vertical-align: middle
+	text-align: center
+
+.modal-inset
+    position: relative
+    padding: 60px 30px
+    min-width: 320px
+    max-width: 400px
+    min-height: 126px
+    margin: auto
+    visibility: hidden
+    box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2)
+    backface-visibility: hidden
+    background-color: #fff
+    transform: translate3d(0, 0, 0)
+    transform-style: preserve-3d
+    .close
+    	display: block
+    	cursor: pointer
+    	position: absolute
+    	top: 10px
+    	right: 10px
+    	padding: 10px
+
+.modal-body
+	margin: auto
+	opacity: 0
+	transform: translateY(0) scale(0.8, 0.8)
+	transition-property: opacity, transform
+	transition-duration: 0.25s
+	transition-delay: 0.1s
+	ul
+		li
+			line-height: 46px
+			border-bottom: 1px dashed #111
+			text-align: left
+			padding-left: 30px
+			&:last-child
+				border-bottom: 0
+			span
+				color: #111
+			img
+				position: relative
+				top: 2px
+				margin-right: 6px
+			a
+				text-decoration: none
+				color: #111
+				font-weight: 700
+
+@-webkit-keyframes modalComeIn
+	0%
+		visibility: hidden
+		opacity: 0
+		transform: scale(0.8, 0.8)
+
+	65.5%
+		transform: scale(1.03, 1.03)
+
+	100%
+		visibility: visible
+		opacity: 1
+		transform: scale(1, 1)
+
+@-moz-keyframes modalComeIn
+	0%
+		visibility: hidden
+		opacity: 0
+		transform: scale(0.8, 0.8)
+
+	65.5%
+		transform: scale(1.03, 1.03)
+
+	100%
+		visibility: visible
+		opacity: 1
+		transform: scale(1, 1)
+
+@keyframes modalComeIn
+	0%
+		visibility: hidden
+		opacity: 0
+		transform: scale(0.8, 0.8)
+
+	65.5%
+		transform: scale(1.03, 1.03)
+
+	100%
+		visibility: visible
+		opacity: 1
+		transform: scale(1, 1)
+
+@-webkit-keyframes modalHeadOut
+	0%
+		visibility: visible
+		opacity: 1
+		transform: translateY(0) scale(1, 1)
+
+	100%
+		visibility: hidden
+		opacity: 0
+		transform: translateY(35px) scale(0.97, 0.97)
+
+@-moz-keyframes modalHeadOut
+	0%
+		visibility: visible
+		opacity: 1
+		transform: translateY(0) scale(1, 1)
+
+	100%
+		visibility: hidden
+		opacity: 0
+		transform: translateY(35px) scale(0.97, 0.97)
+
+@keyframes modalHeadOut
+	0%
+		visibility: visible
+		opacity: 1
+		transform: translateY(0) scale(1, 1)
+
+	100%
+		visibility: hidden
+		opacity: 0
+		transform: translateY(35px) scale(0.97, 0.97)
+/*Modal phones END*/

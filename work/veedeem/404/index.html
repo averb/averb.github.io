@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Title</title>
+	<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- main CSS -->
+<link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+<!-- Header -->
+<header>
+	<div class="def-width">
+	<div class="logo-header">
+		<a href="../index.html"><img src="../images/svg/logo.svg" alt=""></a>
+	</div>
+	<nav class="nav-header" id="nav-header">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../services/index.html">Services</a></li>
+			<li><a href="../portfolio/index.html">Portfolio</a></li>
+			<li><a href="../about/index.html">About us</a></li>
+			<li><a href="../blog/index.html">Blog</a></li>
+			<li><a href="../faq/index.html">FAQs</a></li>
+			<li><a href="../contact/index.html">Contact us</a></li>
+			<li class="nav-header__butn"><span class="butn butn-orange gaq-modal-toggler">Get a Quote</span></li>
+		</ul>
+	</nav>
+	<div class="tablet-menu show-in-tab">
+		<span class="butn butn-orange gaq-modal-toggler">Get a Quote</span>
+		<span class="nav-header__toggler butn butn-white"></span>
+	</div>
+</div>
+
+<!-- Get a Quote MODAL -->
+<div class="gaq-modal-fogging"></div>
+<div class="gaq-modal">
+	<i class="contact-cont__form-close gaq-modal-toggler"><img src="../images/svg/ic_close.svg" alt=""></i>
+	<h2 class="like-h1">Get a quote</h2>
+	<div class="contact-cont__form">
+		<form action="" method="post" id="gaq-form">
+			<div class="contact-cont__input-cover">
+				<span>Your Name:</span>
+				<input type="text" name="username" minlength="2" onkeyup="return withoutCyr(this);" required>
+			</div>
+			<div class="contact-cont__input-cover">
+				<span>Company's Email:</span>
+				<input type="email" name="email" onkeyup="return withoutCyr(this);" required>
+			</div>
+			<div class="contact-cont__input-cover">
+				<span>Phone Number:</span>
+				<input name="number" onkeyup="return withoutCyr(this);" required>
+			</div>
+			<div class="contact-cont__input-cover">
+				<span>Website/App Link:</span>
+				<input type="text" name="link" required>
+			</div>
+			<div class="contact-cont__input-cover">
+				<span>Description:</span>
+				<textarea name="comment" onkeyup="return withoutCyr(this);" placeholder="Tell us what's your business about, what type of video you'd like and how long it should be." required></textarea>
+			</div>
+			<div class="contact-cont__button">
+				<button type='submit' class="butn butn-orange">Send it!</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+</header>
+<!-- Content -->
+<main class="not-found">
+	<div class="def-width">
+		<h1>404! Oh nooo!</h1>
+		<ul class="three-dots">
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<p>You probably got lost on your way to the page.</p>
+		<p>The page you’re looking for has been moved, deleted or can’t be found.</p>
+		<div class="not-found__butns">
+			<p>So, it's time to go back home or simply make an order:</p>
+			<a href="../" class="butn butn-green">Home</a>
+			<span class="butn butn-orange gaq-modal-toggler">Order now</span>
+		</div>
+	</div>
+</main>
+
+<!-- Footer -->
+<footer>
+	<div class="def-width">
+  <div class="footer-logo">
+    <img src="../images/svg/logo_dark.svg" alt="">
+    <p class="copyright">Copyright © 2016 Veedeem.All rights reserved.</p>
+  </div>
+  <div class="footer-right">
+    <ul class="footer-social">
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_facebook.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_instagram.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_twitter.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_google.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_youtube.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_linkedin.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_pinterest.svg" alt="">
+        </a>
+      </li>
+    </ul>
+    <nav  class="footer-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="../js/jquery-1.12.4.js"></script>
+<!-- JQuery Validator -->
+<script src="../js/jquery.validate.min.js"></script>
+<!-- Validate options -->
+<script src="../js/validate.options.js"></script>
+<!-- Small Scripts -->
+<script src="../js/smallScripts.js"></script>
+<!-- Pagination -->
+<script src="../js/pagination.js"></script>
+<!-- Bx Slider -->
+<script src="../js/jquery.bxslider.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="54" viewBox="0 0 60 54">
+<defs>
+<filter id="Ellipse-23-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#D5A475" flood-opacity="1.000"/>
+<feComposite operator="out" in2="SourceAlpha"/>
+<feOffset dx="-0.57357643635105" dy="-0.81915204428899"/>
+<feGaussianBlur stdDeviation="0.0" result="blur" />
+<feComposite operator="in" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feBlend mode="normal" in="maskedShadow" in2="SourceGraphic" result="innerShadow"/>
+</filter>
+<filter id="Ellipse-23-copy-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#D5A475" flood-opacity="1.000"/>
+<feComposite operator="out" in2="SourceAlpha"/>
+<feOffset dx="-0.57357643635105" dy="-0.81915204428899"/>
+<feGaussianBlur stdDeviation="0.0" result="blur" />
+<feComposite operator="in" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feBlend mode="normal" in="maskedShadow" in2="SourceGraphic" result="innerShadow"/>
+</filter>
+<filter id="Ellipse-23-copy--fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#D5A475" flood-opacity="1.000"/>
+<feComposite operator="out" in2="SourceAlpha"/>
+<feOffset dx="-0.57357643635105" dy="-0.81915204428899"/>
+<feGaussianBlur stdDeviation="0.0" result="blur" />
+<feComposite operator="in" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feBlend mode="normal" in="maskedShadow" in2="SourceGraphic" result="innerShadow"/>
+</filter>
+</defs>
+<g id="icon-honest">
+<g id="6">
+<path id="Shape-135" d="M19.253,18.359 C23.326,21.181 29.321,14.561 34.472,20.058 C39.122,24.304 43.736,27.744 34.472,28.550 C25.208,29.356 14.180,14.538 19.253,18.359 z" fill="#EDD4A0" />
+<path id="Rectangle-5-copy" d="M50.983,10.081 C54.205,11.290 60.046,20.065 58.837,23.692 C57.629,27.319 29.332,40.974 29.332,40.974 L21.478,27.363 C21.478,27.363 47.761,8.872 50.983,10.081 z" fill="#E2BF88" />
+<path id="Rectangle-5" d="M2.042,23.870 C-0.677,21.452 1.739,10.561 9.896,10.259 C19.129,16.418 28.083,24.675 35.103,29.494 C39.179,33.232 42.163,30.540 43.232,32.021 C47.159,37.461 35.076,41.400 31.753,42.005 C28.430,42.609 7.177,26.590 2.042,23.870 z" fill="#ECD3AB" />
+<path id="Shape-151" d="M44.000,32.000 C45.667,42.083 33.750,35.500 35.000,35.000 C36.250,34.500 43.333,38.083 44.000,32.000 z" fill="#E2BF88" />
+<path id="Shape-151-copy-2" d="M37.000,38.000 C38.667,48.083 26.750,41.500 28.000,41.000 C29.250,40.500 36.333,44.083 37.000,38.000 z" fill="#E2BF88" />
+<path id="Shape-151-copy" d="M40.000,36.000 C43.417,45.833 29.750,38.500 31.000,38.000 C32.250,37.500 39.333,42.333 40.000,36.000 z" fill="#E2BF88" />
+<path id="Shape-136" d="M28.074,20.087 C26.564,21.598 22.939,23.412 22.032,24.923 C21.126,26.434 20.522,28.550 22.032,29.759 C24.751,31.270 28.678,24.319 30.491,26.132 C32.303,27.945 35.324,27.341 35.324,27.341 L40.158,26.132 C40.158,26.132 40.158,16.460 37.741,18.878 C35.324,21.296 29.585,18.576 28.074,20.087 z" fill="#E2BF88" />
+<path id="Shape-139" d="M24.449,28.550 C24.449,28.550 29.041,23.472 34.116,26.132 C39.191,28.792 37.439,24.923 38.949,26.132 C40.460,27.341 36.170,29.759 34.116,28.550 C30.249,24.923 24.449,28.550 24.449,28.550 z" fill="#D0AC73" />
+<path id="Shape-140" d="M3.907,16.460 C3.750,14.882 6.961,11.813 9.530,11.944 C13.522,12.146 18.881,16.654 19.616,20.087 C18.810,22.102 13.171,20.087 9.949,18.878 C6.727,17.669 4.310,20.490 3.907,16.460 z" fill="#F3DDBA" />
+<path id="Shape-141" d="M51.032,12.833 C53.449,12.833 57.477,18.475 57.074,22.505 C56.671,26.535 45.796,30.162 44.991,28.550 C44.185,26.938 49.824,22.908 51.032,20.087 C52.241,17.266 48.616,12.833 51.032,12.833 z" fill="#DAB479" />
+<path id="Ellipse-23" d="M19.012,31.292 C20.457,32.127 20.952,33.975 20.117,35.421 C19.283,36.866 19.525,37.172 16.595,35.480 C13.665,33.787 14.051,33.844 14.885,32.398 C15.719,30.953 17.567,30.457 19.012,31.292 z" fill="#E2BF88" filter="url(#Ellipse-23-fx)" />
+<path id="Ellipse-23-copy" d="M23.845,33.710 C25.290,34.545 25.785,36.393 24.951,37.838 C24.117,39.284 24.358,39.590 21.428,37.898 C18.498,36.205 18.884,36.262 19.718,34.816 C20.553,33.370 22.400,32.875 23.845,33.710 z" fill="#E2BF88" filter="url(#Ellipse-23-copy-fx)" />
+<path id="Ellipse-23-copy-" d="M28.678,36.128 C30.123,36.962 30.618,38.811 29.784,40.256 C28.950,41.702 29.192,42.008 26.262,40.316 C23.332,38.623 23.718,38.680 24.552,37.234 C25.386,35.788 27.233,35.293 28.678,36.128 z" fill="#E2BF88" filter="url(#Ellipse-23-copy--fx)" />
+</g>
+</g>
+</svg>

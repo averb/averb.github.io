@@ -1,0 +1,124 @@
+footer
+	background:
+		image: url("../images/footer_bg.png")
+		repeat: no-repeat
+		position: 14% 0
+	.def-width
+		padding-top: 20px
+		padding-bottom: 20px
+		justify-content: space-between
+		.kenya-page-links,
+		.usa-page-links,
+		.pakistan-page-links,
+		.philippines-page-links,
+		.india-page-links,
+			display: none
+		> ul
+			padding-left: 22px
+			padding-right: 22px
+			position: relative
+			&:first-child
+				padding-left: 0
+				&:after
+					display: none
+			&:after
+				content: ""
+				position: absolute
+				top: 7px
+				left: 0
+				height: 110px
+				border-right: 1px solid #fff
+				opacity: .5
+			li
+				a
+					color: #b1b1b1
+					font-size: 14px
+					line-height: 30px
+					text-decoration: underline
+					&:hover
+						color: #fc0
+
+.footer-right
+	padding-left: 22px
+	position: relative
+	&:after
+		content: ""
+		position: absolute
+		top: 7px
+		left: 0
+		height: 110px
+		border-right: 1px solid #fff
+		opacity: .5
+	.logo
+		margin-bottom: 25px
+		a
+			color: #fff
+			font-size: 16px
+			justify-content: center
+			img
+				width: 46px
+				height: 46px
+
+.soc-icons
+	justify-content: center
+	margin-bottom: 20px
+
+.soc-icons__circle
+	margin-right: 10px
+	width: 27px
+	height: 27px
+	background-color: #fc0
+	border-radius: 50%
+	&:hover
+		background-color: #fff
+	&:last-child
+		margin-right: 0
+
+.copyright
+	color: #c5c5c5
+	font-size: 12px
+	text-align: center                                                                                                                                                                                                                                   
+
+.footer-philippines,
+.footer-usa,
+.footer-kenya,
+.footer-pakistan,
+.footer-philippines,
+.footer-india
+	.all-page-links
+		display: none
+
+.footer-usa
+	.def-width
+		.usa-link
+			display: none
+		.usa-page-links
+			display: block
+
+.footer-kenya
+	.def-width
+		.kenya-link
+			display: none
+		.kenya-page-links
+			display: block
+
+.footer-pakistan
+	.def-width
+		.pakistan-link
+			display: none
+		.pakistan-page-links
+			display: block
+
+.footer-philippines
+	.def-width
+		.philippines-link
+			display: none
+		.philippines-page-links
+			display: block
+
+.footer-india
+	.def-width
+		.india-link
+			display: none
+		.india-page-links
+			display: block

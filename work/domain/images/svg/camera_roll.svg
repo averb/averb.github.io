@@ -1,0 +1,46 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="76" viewBox="0 0 76 76">
+<defs>
+<linearGradient id="gradient1" gradientUnits="userSpaceOnUse" x1="50.000%" y1="100.000%" x2="50.000%" y2="0.000%" >
+<stop offset="0%" stop-color="#898B91" />
+<stop offset="100%" stop-color="#DADCDD" />
+</linearGradient>
+<filter id="Rounded-Rectangl-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#0088CC" />
+<feComposite operator="in" in2="SourceAlpha" result="sourceFill" />
+<feBlend mode="normal" in="SourceGraphic" in2="sourceFill" result="gradientFill" />
+</filter>
+<filter id="Rounded-Rectangl-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#FFFFFF" flood-opacity="0.500"/>
+<feComposite operator="in" in2="SourceAlpha" />
+<feOffset dx="0" dy="1"/>
+<feGaussianBlur stdDeviation="0.0" result="blur" />
+<feComposite operator="out" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feComposite operator="over" in="maskedShadow" in2="SourceGraphic" result="dropShadow"/>
+<feFlood flood-color="#000000" flood-opacity="0.850"/>
+<feComposite operator="out" in2="SourceAlpha"/>
+<feOffset dx="0" dy="1"/>
+<feGaussianBlur stdDeviation="0.2" result="blur" />
+<feComposite operator="in" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feBlend mode="normal" in="maskedShadow" in2="dropShadow" result="innerShadow"/>
+</filter>
+<filter id="Ellipse-11-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#000000" flood-opacity="0.850"/>
+<feComposite operator="in" in2="SourceAlpha" />
+<feOffset dx="0" dy="1"/>
+<feGaussianBlur stdDeviation="0.2" result="blur" />
+<feComposite operator="out" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feComposite operator="over" in="maskedShadow" in2="SourceGraphic" result="dropShadow"/>
+<feFlood flood-color="#FFFFFF" flood-opacity="0.500"/>
+<feComposite operator="out" in2="SourceAlpha"/>
+<feOffset dx="0" dy="1"/>
+<feGaussianBlur stdDeviation="0.0" result="blur" />
+<feComposite operator="in" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feBlend mode="normal" in="maskedShadow" in2="dropShadow" result="innerShadow"/>
+</filter>
+</defs>
+<g id="camera-roll">
+<path id="Rounded-Rectangl" d="M4.000,0.000 C4.000,0.000 72.000,0.000 72.000,0.000 C74.209,0.000 76.000,1.791 76.000,4.000 C76.000,4.000 76.000,72.000 76.000,72.000 C76.000,74.209 74.209,76.000 72.000,76.000 C72.000,76.000 4.000,76.000 4.000,76.000 C1.791,76.000 0.000,74.209 0.000,72.000 C0.000,72.000 0.000,4.000 0.000,4.000 C0.000,1.791 1.791,0.000 4.000,0.000 z" fill="url(#gradient1)" filter="url(#Rounded-Rectangl-fx)" />
+<path id="Rounded-Rectangl" d="M64.737,53.500 C64.737,53.500 12.263,53.500 12.263,53.500 C12.261,53.457 12.250,53.418 12.250,53.375 C12.250,53.375 12.250,26.125 12.250,26.125 C12.250,26.082 12.261,26.042 12.263,26.000 C12.263,26.000 64.737,26.000 64.737,26.000 C64.739,26.042 64.750,26.082 64.750,26.125 C64.750,26.125 64.750,53.375 64.750,53.375 C64.750,53.418 64.739,53.457 64.737,53.500 zM38.500,28.500 C32.287,28.500 27.250,33.537 27.250,39.750 C27.250,45.963 32.287,51.000 38.500,51.000 C44.713,51.000 49.750,45.963 49.750,39.750 C49.750,33.537 44.713,28.500 38.500,28.500 zM38.500,49.219 C33.270,49.219 29.031,44.979 29.031,39.750 C29.031,34.520 33.270,30.281 38.500,30.281 C43.729,30.281 47.969,34.520 47.969,39.750 C47.969,44.979 43.729,49.219 38.500,49.219 zM16.750,21.625 C16.750,21.625 17.365,21.625 17.365,21.625 L21.510,21.625 L22.250,21.625 C22.250,21.625 22.344,21.625 22.344,21.625 C25.112,21.545 26.886,20.460 27.613,19.119 C28.385,17.693 29.034,15.375 32.566,15.375 C32.566,15.375 44.235,15.375 44.235,15.375 C48.032,15.375 48.479,17.468 49.293,19.015 C50.117,20.581 52.076,21.405 54.487,21.625 C54.487,21.625 60.250,21.625 60.250,21.625 C62.478,21.625 64.316,23.248 64.674,25.375 C64.674,25.375 12.326,25.375 12.326,25.375 C12.684,23.248 14.522,21.625 16.750,21.625 zM19.125,19.125 C19.125,19.125 19.750,19.125 19.750,19.125 C20.786,19.125 21.625,19.964 21.625,21.000 C21.625,21.000 17.250,21.000 17.250,21.000 C17.250,19.964 18.089,19.125 19.125,19.125 zM60.250,57.875 C60.250,57.875 16.750,57.875 16.750,57.875 C14.522,57.875 12.684,56.251 12.326,54.125 C12.326,54.125 64.674,54.125 64.674,54.125 C64.316,56.251 62.478,57.875 60.250,57.875 z" fill="#303030" filter="url(#Rounded-Rectangl-fx)" />
+<path id="Ellipse-11" d="M50.375,28.500 C51.065,28.500 51.625,29.060 51.625,29.750 C51.625,30.440 51.065,31.000 50.375,31.000 C49.685,31.000 49.125,30.440 49.125,29.750 C49.125,29.060 49.685,28.500 50.375,28.500 z" fill="#FFC104" filter="url(#Ellipse-11-fx)" />
+</g>
+</svg>

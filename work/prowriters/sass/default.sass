@@ -1,0 +1,418 @@
+body
+	max-width: 1920px
+	min-width: 320px
+	margin: 0 auto
+	font-family: "Open sans"
+	color: #333
+	font-size: 16px
+	font-weight: 400
+	line-height: 30px
+	display: flex
+	flex-direction: column
+	min-height: 100vh
+	position: relative
+	background-color: #fff
+	&.no-overflow
+		overflow: hidden
+	&.no-overflow-nav
+		overflow: hidden
+	&.no-overflow-log
+		overflow: hidden
+
+main
+	flex: 1
+	margin-top: 96px
+	padding-top: 62px
+	
+h1, h2, h3, h4
+	font-weight: 400
+	text-transform: uppercase
+	text-align: center
+
+h1, h2.like-h1
+	font-size: 30px
+	line-height: 36px
+
+h2
+	font-size: 28px
+	line-height: 34px
+
+h3
+	font-size: 26px
+	line-height: 32px
+
+h4
+	font-size: 24px
+	line-height: 30px
+
+strong
+	font-weight: 600
+
+button
+	border: 0
+	padding: 0
+	outline: 0
+	cursor: pointer
+
+a, .smth-more
+	display: inline-block
+	color: #4faf4f
+	text-decoration: underline
+	transition: .1s
+	cursor: pointer
+	&:hover
+		text-decoration: none
+		color: #8fd28f
+	&:focus
+		text-decoration: none
+		color: #8fd28f
+
+hr
+	border: 0
+	width: 50px
+	height: 1px
+	background-color: #20c05c
+	margin: 18px auto
+
+ol.def-ol
+	list-style: none
+	counter-reset: li
+	padding-left: 32px
+	li
+		position: relative
+		counter-increment: li
+		line-height: 24px
+		margin-bottom: 28px
+		&::before 
+			content: counter(li)
+			color: #4faf4f
+			font-size: 16px
+			font-weight: 400
+			display: inline-block
+			margin-left: -32px
+			margin-right: 15px
+			border-radius: 50%
+			border: 1px solid #4faf4f
+			padding: 3px 11px
+
+ul.green-list
+	text-align: left
+	li
+		position: relative
+		font-weight: 400
+		line-height: 28px
+		padding-left: 16px
+		margin-bottom: 22px
+		font-size: 16px
+		&:before
+			content: ""
+			position: absolute
+			top: 10px
+			left: 0
+			width: 7px
+			height: 7px
+			background-color: #4faf4f
+			border-radius: 50%
+
+ul.check-list
+	text-align: left
+	li
+		position: relative
+		line-height: 34px
+		padding-left: 60px
+		margin-bottom: 26px
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 33px
+			height: 33px
+			background:
+				image: url("../images/svg/check-green.svg")
+				size: 33px 33px
+				repeat: no-repeat
+
+.def-width
+	max-width: 1170px
+	margin: auto
+	padding-left: 15px
+	padding-right: 15px
+
+.show-in-mob
+	display: none
+
+.flex
+	display: flex
+
+.with-sidebar
+	flex: 9
+
+.title
+	margin-bottom: 30px
+
+.sidebar
+	flex: 3
+
+.home-main__smth
+	position: absolute
+	left: 0
+	right: 0
+	bottom: 0
+
+.show-in-tab
+	display: none
+
+.show-in-mob
+	display: none
+
+.subtitle
+	text-align: center
+
+div
+	> svg, > img
+		display: block
+/*Buttons*/
+.butn
+	border: 0
+	outline: 0
+	background-image: none
+	background-color: #ddd
+	font-weight: 400
+	color: inherit
+	font-size: inherit
+	font-family: inherit
+	text-transform: uppercase
+	text-align: center
+	text-decoration: none
+	cursor: pointer
+	line-height: 1.5
+	display: inline-block
+	position: relative
+	transition: .2s
+	white-space: nowrap
+	box-sizing: border-box
+	//style
+	border-radius: 23px
+	box-shadow: 0 2px 3px rgba(0, 0, 0, 0.31)
+	font-weight: 600
+	overflow: hidden
+	backface-visibility: hidden
+	min-width: 200px
+	padding: 11px 30px
+	.hid-text
+		position: absolute
+		left: -100%
+		top: 0
+		height: 100%
+		width: 100%
+		line-height: 46px
+		transition: left .2s
+	.showed-text
+		display: inline-block
+		width: 100%
+		height: 100%
+		transition: transform .2s
+		backface-visibility: hidden
+	&:hover
+		background-color: #dadada
+		color: inherit
+		.showed-text
+			transform: translateX(200%)
+		.hid-text
+			left: 0
+	&:focus,
+	&:active
+		box-shadow: none
+
+.butn-yellow
+	background-color: #fc0
+	color: #333
+
+.butn-green
+	background-color: #4faf4f
+	color: #fff
+	box-shadow: none
+	min-width: 187px
+	padding: 14px 30px
+	border-radius: 26px
+	.hid-text
+		line-height: 52px
+/*Buttons END*/
+
+/*Select*/
+.select-style
+	background-color: #fff
+	position: relative
+	width: 100%
+	z-index: 1
+	border-radius: 4px
+	overflow: hidden
+	cursor: pointer
+	&:after
+		content: ''
+		position: absolute
+		width: 20px
+		height: 10px
+		position: absolute
+		top: 16px
+		right: 0
+		z-index: -1
+		background:
+			image: url("../images/svg/arrow.svg")
+			repeat: no-repeat
+			position: 0 0
+	&:before
+		content: ''
+		height: 100%
+		position: absolute
+		top: 0
+		right: 0
+		background-color: #fff
+		width: 16px
+		z-index: -1
+	select
+		background-color: transparent
+		height: 37px
+		border: 0
+		border-radius: 3px
+		border: 1px solid #c6c6c6
+		color: #222
+		font-size: 14px
+		font-weight: 400
+		width: 100%
+		padding: 0 16px
+		cursor: pointer
+		box-shadow: none
+		display: block
+		box-sizing: border-box
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		&:focus
+			outline: none
+/*Select END*/
+
+/*Radio and checkbox*/
+input[type="radio"] 
+	background-color: #fff
+	border-radius: 50%
+	cursor: pointer
+	display: inline-block
+	width: 11px
+	height: 11px
+	position: relative
+	-webkit-appearance: none
+	box-shadow: inset 0 0 0 1px #a0a0a0
+	outline: 0
+	margin: 0
+	padding: 0
+	top: 0
+	margin-right: 5px
+	&:hover
+		&:after
+			background-color: #ccc
+	&:after 
+		background-color: #fff
+		border-radius: 50%
+		content: ''
+		display: block
+		width: 7px
+		height: 7px
+		left: 2px
+		position: relative
+		top: 2px
+	&:checked
+		&:after 
+			background-color: #4faf4f
+
+input[type="checkbox"] 
+	background-color: #fff
+	cursor: pointer
+	display: inline-block
+	width: 16px
+	height: 16px
+	position: relative
+	-webkit-appearance: none
+	box-shadow: inset 0 0 0 1px #cfcfcf
+	border-radius: 4px
+	bottom: -3px
+	margin: 0
+	outline: 0
+	margin-right: 10px
+	&:after 
+		content: ''
+		display: block
+		position: relative
+		width: 15px
+		height: 15px
+		top: 0px
+		left: 1px
+		opacity: 0
+		background:
+			image: url("../images/svg/checkbox.svg")
+			repeat: no-repeat
+			size: 15px 15px
+	&:checked
+		&:after 
+			opacity: 1
+
+/*Radio and checkbox END*/
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea
+	box-sizing: border-box
+	background-color: #fff
+	border: 0
+	outline: 0
+	width: 100%
+	font-family: "Open Sans"
+	color: #333
+	//border: 1px solid rgba(213, 213, 213, 0.94)
+	//height: 37px
+	//color: #222
+	//font-size: 14px
+	//font-weight: 400
+	//padding: 0 6px
+	//max-width: 180px
+	//text-align: center
+
+::-webkit-scrollbar
+	width: 6px
+	background-color: #fff
+	&:horizontal
+		height: 6px
+::-webkit-scrollbar-track 
+	background-color: none
+::-webkit-scrollbar-thumb  
+	background-color: #333
+	border-radius: 3px
+
+//Send mail form
+.send-mail
+	max-width: 454px
+	margin: 60px auto
+	position: relative
+	img
+		position: absolute
+		top: 14px
+		left: 16px
+	input
+		padding: 16px 22px 16px 60px
+		border: 1px solid #c9c9c9
+		border-radius: 4px
+		font-size: 16px
+		font-weight: 400
+		line-height: 18px
+	.butn-yellow
+		border: 1px solid #dcb000
+		border-radius: 4px
+		min-width: 94px
+		box-shadow: none
+		margin-left: -8px
+		&:hover
+			border: 1px solid #c9c9c9
+		.hid-text
+			line-height: 50px
+

@@ -1,0 +1,140 @@
+.registration
+	.def-width
+		max-width: 965px
+	h1
+		margin-bottom: 46px
+.registration__content
+	> ul
+		margin-bottom: 13px
+		flex-wrap: wrap
+		> li
+			flex: 1
+			display: flex
+			align-items: center
+			&:nth-child(2)
+				justify-content: flex-end
+		p
+			font-size: 14px
+			margin-right: 22px
+			flex: 1
+			text-align: right
+			max-width: 228px
+			line-height: 20px
+		img
+			position: relative
+			top: 3px
+			cursor: pointer
+	label
+		font-size: 14px
+		cursor: pointer
+		margin-right: 12px
+	.input-cover
+		flex: 1
+		max-width: 217px
+		&.full-width
+			max-width: 100%
+		input
+			padding: 8px 14px
+	.select-style
+		flex: 1
+		max-width: 217px
+		&.full-width
+			max-width: 100%
+
+	.academic-column
+		flex: 1
+
+	.checkboxes
+		flex: 1
+		justify-content: space-between
+
+	.select-dropdown
+		flex: 1
+		cursor: pointer
+		position: relative
+		&:after
+			content: ""
+			position: absolute
+			width: 8px
+			height: 6px
+			top: 16px
+			right: 12px
+			z-index: -1
+			background:
+				image: url("../images/svg/arrow.svg")
+				repeat: no-repeat
+				position: 0 0
+		p
+			border: 1px solid #c6c6c6
+			border-radius: 3px
+			height: 37px
+			padding: 0 16px
+			line-height: 36px
+			margin-right: 0
+			flex: none
+			text-align: left
+			max-width: 100%
+	.select-dropdown__content
+		display: none
+		padding: 26px 0px
+		justify-content: space-between
+		ul
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
+			li
+				line-height: 20px
+				margin-bottom: 20px
+	
+	.with-dropdown
+		&.with-dropdown--open
+			p
+				align-self: flex-start
+			.select-dropdown
+				&:after
+					z-index: 0
+				p
+					background-color: #ebebeb
+			.select-dropdown__content
+				display: flex
+
+	.flex-start
+		align-self: flex-start
+
+	textarea
+		flex: 1
+		border: 1px solid #c6c6c6
+		border-radius: 3px
+		max-width: 685px
+		min-height: 77px
+		padding: 10px 15px
+
+	.radios
+		flex: 1
+		justify-content: space-between
+		border-bottom: 1px solid #c6c6c6
+		padding-bottom: 26px
+		margin-bottom: 10px
+		ul
+			li
+				line-height: 20px
+				margin-bottom: 20px
+	
+.registration__bottom
+	flex-direction: column
+	margin-bottom: 30px
+	.captcha
+		max-width: 368px
+		img
+			width: 100%
+
+.registration__bottom-cont
+	width: calc(100% - 250px)
+	align-self: flex-end
+	img
+		margin-bottom: 20px
+	label
+		display: block
+		margin-bottom: 20px
+
+

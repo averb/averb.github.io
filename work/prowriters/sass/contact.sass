@@ -1,0 +1,73 @@
+.contact
+	.def-width
+		max-width: 780px
+	h1
+		margin-bottom: 24px
+	hr
+		margin-bottom: 28px
+
+.contact__content
+	ul
+		justify-content: space-between
+		align-items: center
+		margin: 0 52px 28px
+		li
+			font-size: 22px
+			font-weight: 400
+			a
+				color: #333
+				text-decoration: none
+				img
+					position: relative
+					top: 3px
+					margin-right: 10px
+
+.contact__form
+	border: 1px solid #cfcfcf
+	border-radius: 4px
+	padding: 30px 30px 35px
+
+.contact__form-top
+	margin-bottom: 30px
+	flex-wrap: wrap
+
+.input-cover
+	position: relative
+	flex: 1
+	&:first-child
+		margin-right: 38px
+	input
+		border: 1px solid #cfcfcf
+		border-radius: 3px
+		padding: 9px 14px
+		font-size: 14px
+		&:focus
+			border: 1px solid #333
+	&.error
+		input
+			border: 1px solid #ff2020
+			color: #ff2020
+		&:after
+			content: ""
+			width: 15px
+			height: 15px
+			position: absolute
+			top: 12px
+			right: 14px
+			background:
+				image: url("../images/svg/notification.svg")
+				size: 15px 15px
+
+.contact__form-bottom
+	text-align: center
+	textarea
+		max-width: 688px
+		min-height: 173px
+		background-color: #ebebeb
+		border: 1px solid #cfcfcf
+		border-radius: 4px
+		padding: 10px 20px
+		font-size: 16px
+		margin-bottom: 28px
+		&:focus
+			border: 1px solid #333

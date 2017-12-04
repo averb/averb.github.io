@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Veedeem</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- main CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+<!-- Header -->
+<header>
+  <div class="def-width">
+  	<div class="logo-header">
+  		<a href="index.html"><img src="images/svg/logo.svg" alt=""></a>
+  	</div>
+  	<nav class="nav-header" id="nav-header">
+  		<ul>
+  			<li><a href="index.html">Home</a></li>
+  			<li><a href="services/index.html">Services</a></li>
+  			<li><a href="portfolio/index.html">Portfolio</a></li>
+  			<li><a href="about/index.html">About us</a></li>
+  			<li><a href="blog/index.html">Blog</a></li>
+  			<li><a href="faq/index.html">FAQs</a></li>
+  			<li><a href="contact/index.html">Contact us</a></li>
+  			<li class="nav-header__butn"><span class="butn butn-orange gaq-modal-toggler">Get a Quote</span></li>
+  		</ul>
+  	</nav>
+  	<div class="tablet-menu show-in-tab">
+  		<span class="butn butn-orange gaq-modal-toggler">Get a Quote</span>
+  		<span class="nav-header__toggler butn butn-white"></span>
+  	</div>
+  </div>
+
+  <!-- Get a Quote MODAL -->
+  <div class="gaq-modal-fogging"></div>
+  <div class="gaq-modal">
+  	<i class="contact-cont__form-close gaq-modal-toggler"><img src="images/svg/ic_close.svg" alt=""></i>
+  	<h2 class="like-h1">Get a quote</h2>
+  	<div class="contact-cont__form">
+  		<form action="" method="post" id="gaq-form">
+  			<div class="contact-cont__input-cover">
+  				<span>Your Name:</span>
+  				<input type="text" name="username" minlength="2" onkeyup="return withoutCyr(this);" required>
+  			</div>
+  			<div class="contact-cont__input-cover">
+  				<span>Company's Email:</span>
+  				<input type="email" name="email" onkeyup="return withoutCyr(this);" required>
+  			</div>
+  			<div class="contact-cont__input-cover">
+  				<span>Phone Number:</span>
+  				<input name="number" onkeyup="return withoutCyr(this);" required>
+  			</div>
+  			<div class="contact-cont__input-cover">
+  				<span>Website/App Link:</span>
+  				<input type="text" name="link" required>
+  			</div>
+  			<div class="contact-cont__input-cover">
+  				<span>Description:</span>
+  				<textarea name="comment" onkeyup="return withoutCyr(this);" placeholder="Tell us what's your business about, what type of video you'd like and how long it should be." required></textarea>
+  			</div>
+  			<div class="contact-cont__button">
+  				<button type='submit' class="butn butn-orange">Send it!</button>
+  			</div>
+  		</form>
+  	</div>
+  </div>
+
+</header>
+<!-- Content -->
+<main class="home-cont">
+	<section class="home-cont__lid">
+		<div class="def-width">
+			<h4>Everyone’s Got A Story To Tell</h4>
+			<ul class="three-dots">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<h2>So Why Not Make It Interesting With Explainer Video?</h2>
+			<a href="#" class="butn butn-green gaq-modal-toggler">Get details</a>
+			<div class="home-cont__lid-arrow">
+				<a href="#advantages" class="arrow"><img src="images/svg/arrow.svg" alt=""></a>
+			</div>
+			<div class="home-cont__lid-monst-left">
+				<img src="images/svg/1-2.svg" alt="">
+			</div>
+			<div class="home-cont__lid-monst-right">
+				<img src="images/svg/3-4.svg" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="home-cont__advan" id="advantages">
+		<div class="def-width">
+			<h2 class="like-h1">Our advantages</h2>
+			<ul>
+				<li>
+					<img src="images/svg/advantages_1.svg" alt="">
+					<div>
+						<h3>Great Experience</h3>
+						<p>Your videos should leverage each store's format and potential to showcase why your app is unique the best way possible.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/svg/advantages_2.svg" alt="">
+					<div>
+						<h3>Creative Approach</h3>
+						<p>Video ads (Facebook, Instagram, Twitter, ad networks) are shorter, need to grab attention even faster and be clear even without sound.</p>
+					</div>
+				</li>
+				<li>
+					<img src="images/svg/advantages_3.svg" alt="">
+					<div>
+						<h3>Our Goal - Your Success</h3>
+						<p>Whether it's to pitch investors, for your website, social media, to get press coverage or branding, we recommend the best way to portray your app.</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="home-cont__trust">
+		<h2 class="like-h1">Trusted by</h2>
+		<ul class="home-cont__trust-logos">
+			<li>
+				<img src="images/logo_1.png" alt="">
+			</li>
+			<li>
+				<img src="images/logo_2.png" alt="">
+			</li>
+			<li>
+				<img src="images/logo_3.png" alt="">
+			</li>
+			<li>
+				<img src="images/logo_4.png" alt="">
+			</li>
+			<li>
+				<img src="images/logo_5.png" alt="">
+			</li>
+			<li>
+				<img src="images/logo_6.png" alt="">
+			</li>
+		</ul>
+	</section>
+	<section class="home-cont__hiw">
+		<div class="def-width">
+			<h2 class="like-h1">How we work</h2>
+			<ul>
+				<li>
+					<span>1</span>
+					<p>You Send Us Contact Form</p>
+					<img src="images/svg/ic_hiw_1.svg" alt="">
+					<i class="show-in-mob"><span class="butn butn-white">Click to see more</span></i>
+				</li>
+				<li>
+					<span>2</span>
+					<p>Sign Contract & Discuss Details</p>
+					<img src="images/svg/ic_hiw_2.svg" alt="">
+				</li>
+				<li>
+					<span>3</span>
+					<p>We Generate New Ideas</p>
+					<img src="images/svg/ic_hiw_3.svg" alt="">
+				</li>
+				<li>
+					<span>4</span>
+					<p>We Create a Script</p>
+					<img src="images/svg/ic_hiw_4.svg" alt="">
+				</li>
+				<li>
+					<span>5</span>
+					<p>We Work on Storyboard</p>
+					<img src="images/svg/ic_hiw_5.svg" alt="">
+				</li>
+				<li>
+					<span>6</span>
+					<p>We Add Music & Sound Effects</p>
+					<img src="images/svg/ic_hiw_6.svg" alt="">
+				</li>
+				<li>
+					<span>7</span>
+					<p>Your Video is Ready!</p>
+					<img src="images/svg/ic_hiw_7.svg" alt="">
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section class="home-cont__video">
+		<div class="def-width">
+			<h2 class="like-h1">Our latest video</h2>
+			<ul>
+				<li>
+					<iframe width="426" height="240" src="https://www.youtube.com/embed/SF3KKh1hPaE?rel=0" frameborder="0" allowfullscreen></iframe>
+				</li>
+				<li>
+					<iframe width="426" height="240" src="https://www.youtube.com/embed/0RADGtzmsjo?rel=0" frameborder="0" allowfullscreen></iframe>
+				</li>
+				<li>
+					<iframe width="426" height="240" src="https://www.youtube.com/embed/KGn-X9EFpTM?rel=0" frameborder="0" allowfullscreen></iframe>
+				</li>
+				<li>
+					<iframe width="426" height="240" src="https://www.youtube.com/embed/SF3KKh1hPaE?rel=0" frameborder="0" allowfullscreen></iframe>
+				</li>
+				<li>
+					<iframe width="426" height="240" src="https://www.youtube.com/embed/0RADGtzmsjo?rel=0" frameborder="0" allowfullscreen></iframe>
+				</li>
+				<li>
+					<iframe width="426" height="240" src="https://www.youtube.com/embed/KGn-X9EFpTM?rel=0" frameborder="0" allowfullscreen></iframe>
+				</li>
+			</ul>
+			<h3><a href="portfolio/">Our Portfolio</a></h3>
+		</div>
+	</section>
+</main>
+<!-- CTA -->
+<div class="cta">
+	<div class="def-width">
+		<div class="cta__text">
+			<h2>Create your simpleshow explainer video in minutes.</h2>
+			<p>Easy. Free. And like a pro!</p>
+		</div>
+		<span class="butn butn-green gaq-modal-toggler">Get details</span>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="def-width">
+    <div class="footer-logo">
+      <img src="images/svg/logo_dark.svg" alt="">
+      <p class="copyright">Copyright © 2016 Veedeem.All rights reserved.</p>
+    </div>
+    <div class="footer-right">
+      <ul class="footer-social">
+        <li>
+          <a href="#">
+            <img src="images/svg/ic_facebook.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/svg/ic_instagram.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/svg/ic_twitter.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/svg/ic_google.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/svg/ic_youtube.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/svg/ic_linkedin.svg" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/svg/ic_pinterest.svg" alt="">
+          </a>
+        </li>
+      </ul>
+      <nav  class="footer-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</footer>
+<!-- jQuery -->
+<script src="js/jquery-1.12.4.js"></script>
+<!-- JQuery Validator -->
+<script src="js/jquery.validate.min.js"></script>
+<!-- Validate options -->
+<script src="js/validate.options.js"></script>
+<!-- Small Scripts -->
+<script src="js/smallScripts.js"></script>
+<!-- Pagination -->
+<script src="js/pagination.js"></script>
+<!-- Bx Slider -->
+<script src="js/jquery.bxslider.js"></script>
+
+	<script>
+		//start HIW animation
+		jQuery(document).ready(function(){
+			$(window).scroll(function(e){
+				borderShow();
+			});
+			function borderShow(){
+				var scrolled = $(window).scrollTop();
+				if(scrolled >= $('.home-cont__advan').offset().top) {
+					$('.home-cont__hiw ul li').addClass('hiw-li-anim');
+				} else {
+					$('.home-cont__hiw ul li').removeClass('hiw-li-anim');
+				}
+			}
+		});
+		//
+		if ($(window).width() <= 1180) {
+			$(document).ready(function(){
+				$('.home-cont__trust-logos').bxSlider({
+					minSlides: 4,
+					maxSlides: 4,
+					moveSlides: 1,
+					auto: true,
+					pause: 2000
+				});
+			});
+		}
+	</script>
+</body>
+</html>

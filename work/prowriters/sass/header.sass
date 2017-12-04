@@ -1,0 +1,190 @@
+header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	transition: background-color .4s
+	border-bottom: 1px solid #cfcfcf
+	z-index: 999
+	background-color: #fff
+	&.header-scroll
+		background-color: #fff
+		.def-width
+			padding-top: 5px
+			padding-bottom: 5px
+			.logo
+				a
+					transform: scale(.8,.8)
+	.def-width
+		justify-content: space-between
+		align-items: center
+		padding-top: 20px
+		padding-bottom: 20px
+		transition: padding .4s
+.logo
+	a
+		font-size: 18px
+		line-height: 24px
+		align-items: center
+		text-decoration: none
+		color: #333
+		transition: transform .4s
+		&:hover
+			color: #333
+		span
+			margin-left: 10px
+
+
+.main-nav
+	> ul
+		display: flex
+		> li
+			margin-right: 14px
+			&:last-child
+				margin-right: 0
+			a
+				display: block
+				color: #333
+				text-decoration: none
+				text-transform: uppercase
+				font-size: 15px
+				line-height: 28px
+				padding: 0px 13px
+				&:hover
+					text-decoration: underline
+				&.active
+					color: #fff
+					background-color: #4faf4f
+					border: 1px solid #00b045
+					border-radius: 14px
+
+.login
+	color: #333
+	text-transform: uppercase
+	font-size: 15px
+	cursor: pointer
+	svg
+		margin-right: 10px
+		.st0
+			fill: #333
+	&:hover
+		text-decoration: underline
+
+.home-header
+	border-bottom: 0
+	background-color: transparent
+	&.header-scroll
+		.logo
+			a
+				color: #333
+		.main-nav
+			> ul
+				> li
+					a
+						color: #333
+		.login
+			color: #333
+			.st0
+				fill: #333
+	.logo
+		a
+			color: #fff
+	.main-nav
+		> ul
+			> li
+				a
+					color: #fff
+	.login
+		color: #fff
+		svg
+			.st0
+				fill: #fff
+
+//Login modal
+.modal-wrapper
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	background-color: rgba(5, 47, 47, 0.9)
+	opacity: 0
+	visibility: hidden
+	transition: opacity .2s
+	z-index: -1
+	&.modal-wrapper--open
+		opacity: 1
+		visibility: visible
+		z-index: 1000
+		.login-modal
+			opacity: 1
+			transition-delay: .2s
+			transform: translate(0%, 0%) rotate(0deg)
+
+
+.login-modal
+	max-width: 391px
+	background-color: #fff
+	border: 1px solid #cfcfcf
+	border-radius: 4px
+	margin: auto
+	opacity: 0
+	transform: translate(300%, -200%) rotate(-360deg)
+	transition: transform .3s, opacity .4s
+
+
+.login-modal__head
+	position: relative
+	padding: 16px 30px
+	border-bottom: 1px solid #cfcfcf
+	h5
+		font-size: 20px
+		font-weight: 600
+		text-transform: uppercase
+
+.login-modal__closer
+	position: absolute
+	top: 50%
+	right: 30px
+	margin-top: -6px
+	cursor: pointer
+
+.login-modal__content
+	padding: 22px 30px 10px
+	text-align: center
+	input[type="email"],
+	input[type="password"]
+		width: 100%
+		background-color: #ebebeb
+		border: 1px solid #cfcfcf
+		border-radius: 4px
+		font-size: 16px
+		font-weight: 400
+		line-height: 18px
+		padding: 10px 14px
+		margin-bottom: 18px
+		&:focus
+			border: 1px solid #a0a0a0
+	.flex
+		justify-content: space-between
+		font-size: 14px
+		margin-bottom: 16px
+		label
+			cursor: pointer
+		input
+			margin-right: 8px
+		a
+			text-decoration: none
+	.butn-green
+		box-shadow: none
+		min-width: 187px
+		padding: 14px 30px
+		border-radius: 26px
+		margin-bottom: 10px
+		.hid-text
+			line-height: 52px
+	p
+		font-size: 14px
+		a
+			text-decoration: none
+

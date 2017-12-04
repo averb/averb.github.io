@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>About</title>
+	<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- main CSS -->
+<link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+<!-- Header -->
+<header  class="header--colored">
+	<div class="def-width">
+	<div class="logo-header">
+		<a href="../index.html"><img src="../images/svg/logo.svg" alt=""></a>
+	</div>
+	<nav class="nav-header" id="nav-header">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../services/index.html">Services</a></li>
+			<li><a href="../portfolio/index.html">Portfolio</a></li>
+			<li><a href="../about/index.html">About us</a></li>
+			<li><a href="../blog/index.html">Blog</a></li>
+			<li><a href="../faq/index.html">FAQs</a></li>
+			<li><a href="../contact/index.html">Contact us</a></li>
+			<li class="nav-header__butn"><span class="butn butn-orange gaq-modal-toggler">Get a Quote</span></li>
+		</ul>
+	</nav>
+	<div class="tablet-menu show-in-tab">
+		<span class="butn butn-orange gaq-modal-toggler">Get a Quote</span>
+		<span class="nav-header__toggler butn butn-white"></span>
+	</div>
+</div>
+
+<!-- Get a Quote MODAL -->
+<div class="gaq-modal-fogging"></div>
+<div class="gaq-modal">
+	<i class="contact-cont__form-close gaq-modal-toggler"><img src="../images/svg/ic_close.svg" alt=""></i>
+	<h2 class="like-h1">Get a quote</h2>
+	<div class="contact-cont__form">
+		<form action="" method="post" id="gaq-form">
+			<div class="contact-cont__input-cover">
+				<span>Your Name:</span>
+				<input type="text" name="username" minlength="2" onkeyup="return withoutCyr(this);" required>
+			</div>
+			<div class="contact-cont__input-cover">
+				<span>Company's Email:</span>
+				<input type="email" name="email" onkeyup="return withoutCyr(this);" required>
+			</div>
+			<div class="contact-cont__input-cover">
+				<span>Phone Number:</span>
+				<input name="number" onkeyup="return withoutCyr(this);" required>
+			</div>
+			<div class="contact-cont__input-cover">
+				<span>Website/App Link:</span>
+				<input type="text" name="link" required>
+			</div>
+			<div class="contact-cont__input-cover">
+				<span>Description:</span>
+				<textarea name="comment" onkeyup="return withoutCyr(this);" placeholder="Tell us what's your business about, what type of video you'd like and how long it should be." required></textarea>
+			</div>
+			<div class="contact-cont__button">
+				<button type='submit' class="butn butn-orange">Send it!</button>
+			</div>
+		</form>
+	</div>
+</div>
+
+</header>
+<!-- Content -->
+<main class="about-cont">
+	<section class="about-cont__who">
+		<div class="def-width">
+			<h1>Who we are</h1>
+			<p>Integer ac massa vehicula, viverra augue et, auctor urna. Morbi nec enim eodio blandit tempor vitae sit amet est. Aenean non fringilla lacus, vitae accumsan risus. Fusce lectus nibh, dapibus in consequat ac, sollicitudin ut eros. Ut tidunt neque magna. Integer ac massa vehicula, viverra augue et, auctor urna. Morbi nec enim et odio blandit tempor vitae sit amet est. Aenean non fringilla lacus, vitae accumsan risus. Fusce lectus nibh, dapibus in consequat ac, sollicitudin ut eros. Ut tincidunt neque magna.</p>
+		</div>
+	</section>
+	<section class="about-cont__team">
+		<div class="def-width">
+			<h2 class="like-h1">Our team</h2>
+			<ul>
+				<li>
+					<div><img src="../images/svg/avatar_1.svg" alt=""></div>
+					<h2>Jay</h2>
+					<p>CEO & co-founder</p>
+				</li>
+				<li>
+					<div><img src="../images/svg/avatar_2.svg" alt=""></div>
+					<h2>Max</h2>
+					<p>Project Manager</p>
+				</li>
+				<li>
+					<div><img src="../images/svg/avatar_3.svg" alt=""></div>
+					<h2>Monica</h2>
+					<p>Script Writer</p>
+				</li>
+				<li>
+					<div><img src="../images/svg/avatar_4.svg" alt=""></div>
+					<h2>Katie</h2>
+					<p>Animator / Illustrator</p>
+				</li>
+				<li>
+					<div><img src="../images/svg/avatar_5.svg" alt=""></div>
+					<h2>Machael</h2>
+					<p>Motion Graphics Animator</p>
+				</li>
+				<li>
+					<div><img src="../images/svg/avatar_6.svg" alt=""></div>
+					<h2>Oliver</h2>
+					<p>3d Artist</p>
+				</li>
+				<li>
+					<div><img src="../images/svg/avatar_7.svg" alt=""></div>
+					<h2>Ann</h2>
+					<p>Storyboard Artist</p>
+				</li>
+				<li>
+					<div><img src="../images/svg/avatar_8.svg" alt=""></div>
+					<h2>Rick</h2>
+					<p>Content Editor & Community Manager</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+</main>
+<!-- CTA -->
+<div class="cta">
+	<div class="def-width">
+		<div class="cta__text">
+			<h2>Create your simpleshow explainer video in minutes.</h2>
+			<p>Easy. Free. And like a pro!</p>
+		</div>
+		<span class="butn butn-green gaq-modal-toggler">Get details</span>
+	</div>
+</div>
+
+<!-- Footer -->
+<footer>
+	<div class="def-width">
+  <div class="footer-logo">
+    <img src="../images/svg/logo_dark.svg" alt="">
+    <p class="copyright">Copyright © 2016 Veedeem.All rights reserved.</p>
+  </div>
+  <div class="footer-right">
+    <ul class="footer-social">
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_facebook.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_instagram.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_twitter.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_google.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_youtube.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_linkedin.svg" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="../images/svg/ic_pinterest.svg" alt="">
+        </a>
+      </li>
+    </ul>
+    <nav  class="footer-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+</footer>
+<!-- jQuery -->
+<script src="../js/jquery-1.12.4.js"></script>
+<!-- JQuery Validator -->
+<script src="../js/jquery.validate.min.js"></script>
+<!-- Validate options -->
+<script src="../js/validate.options.js"></script>
+<!-- Small Scripts -->
+<script src="../js/smallScripts.js"></script>
+<!-- Pagination -->
+<script src="../js/pagination.js"></script>
+<!-- Bx Slider -->
+<script src="../js/jquery.bxslider.js"></script>
+
+</body>
+</html>

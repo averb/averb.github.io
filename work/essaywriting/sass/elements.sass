@@ -1,0 +1,272 @@
+// main: main.sass
+
+// icon style
+.green-icon,
+.blue-icon,
+.orange-icon,
+.red-icon
+	min-width: 66px
+	min-height: 66px
+	max-height: 66px
+	max-width: 66px
+	border-radius: 50%
+	position: relative
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+.green-icon
+	background-color: #42b574
+.blue-icon
+	background-color: #67c4ef
+.orange-icon
+	background-color: #f3a43d
+.red-icon
+	background-color: #ff4141
+
+// empty icon style
+.green-icon-empty,
+.blue-icon-empty,
+.orange-icon-empty,
+.red-icon-empty
+	min-width: 90px
+	min-height: 90px
+	max-width: 90px
+	max-height: 90px
+	border-radius: 50%
+	position: relative
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+
+.green-icon-empty
+	border: 3px solid #42b574
+.blue-icon-empty
+	border: 3px solid #67c4ef
+.orange-icon-empty
+	border: 3px solid #eaa541
+.red-icon-empty
+	border: 3px solid #ff4141
+
+//Circles
+.first-circle,
+.second-circle,
+.third-circle,
+.fourth-circle
+	width: 92px
+	height: 92px
+	position: relative
+	border: 3px solid #fff
+	border-radius: 50%
+	margin: 0 auto 20px
+	strong
+		width: 54px
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		font-size: 18px
+		font-weight: 700
+		text-transform: uppercase
+		line-height: 24px
+
+//Titles
+.title-red
+	color: #ff4141
+.title-blue
+	color: #67c4ef
+.title-orange
+	color: #f3a43d
+.title-green
+	color: #42b574
+
+.cust-icon
+	width: 45px
+	height: 45px
+	background-color: #42b574
+	border-radius: 6px
+	display: flex
+	align-items: center
+	justify-content: center
+	img
+		width: 25px
+		height: 25px
+
+.cust-icon-lg
+	width: 55px
+	height: 55px
+	display: flex
+	align-items: center
+	justify-content: center
+	background-color: #42b574
+	border-radius: 6px
+	margin-right: 20px
+
+.selected-text
+	background-color: #f6f6f6
+	border-radius: 0 6px 6px 0
+	border-left: 1px solid #42b574
+	padding: 14px
+	margin: 30px 0
+
+//Bunners
+.bunner-one
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 30px 20px
+	margin: 30px 0
+	background:
+		image: url("../images/bgCTA.png")
+		repeat: no-repeat
+		size: cover
+	h2
+		color: #fff
+		font-weight: 700
+		line-height: 36px
+		max-width: 380px
+
+/*Select*/
+.select-style
+	background-color: #f6f6f6
+	position: relative
+	width: 100%
+	z-index: 1
+	overflow: hidden
+	cursor: pointer
+	border: 2px solid #8acfa8
+	border-radius: 6px
+	&:after
+		content: ''
+		position: absolute
+		width: 32px
+		height: 9px
+		text-align: center
+		top: 16px
+		right: 0
+		z-index: -1
+		background:
+			image: url("../images/svg/select_arrow.svg")
+			repeat: no-repeat
+			position: 50% 0
+			size: 11px 9px
+	&:before
+		content: ''
+		height: 100%
+		position: absolute
+		top: 0
+		right: 0
+		background-color: #f6f6f6
+		width: 32px
+		z-index: -1
+		border-left: 1px solid #a8a8a8
+	select
+		background-color: transparent
+		height: 38px
+		border: 0
+		border-radius: 4px
+		color: #6d6d6d
+		font-size: 14px
+		font-weight: 400
+		width: 100%
+		padding: 0 42px 0 10px
+		cursor: pointer
+		box-shadow: none
+		display: block
+		box-sizing: border-box
+		-webkit-appearance: none
+		-moz-appearance: none
+		appearance: none
+		&:focus
+			outline: none
+		&::-ms-expand
+		    display: none
+
+.select-style
+	&.select-style--rotate
+		&:after
+			transform: rotate(180deg)
+/*Select END*/
+
+/*Buttons*/
+.butn
+	border: 0
+	outline: 0
+	background-image: none
+	text-decoration: none
+	display: inline-block
+	padding: 8px 25px
+	margin-bottom: 0 // For input.btn
+	vertical-align: middle
+	line-height: 1.6
+	cursor: pointer
+	text-align: center
+	background-color: #ccc
+	color: #fff
+	font-size: 18px
+	font-weight: 500
+	transition: .2s ease
+	white-space: nowrap
+	text-transform: uppercase
+	&.butn-trans
+		min-width: 440px
+		border: 3px solid rgba(#fff, .4)
+		border-radius: 6px
+		background-color: transparent
+		font-size: 20px
+		font-weight: 700
+		text-transform: none
+		padding: 12px 25px
+		&:hover
+			border-color: #fff
+		&:active
+			border-color: rgba(#fff, .4)
+	&.butn-trans-orange
+		min-width: 207px
+		border: 2px solid rgba(#f09826, .4)
+		border-radius: 6px
+		background-color: transparent
+		color: #f09826
+		font-size: 20px
+		font-weight: 700
+		padding: 6px 14px
+		&:hover
+			border-color: #f09826
+		&:active
+			border-color: rgba(#fff, .4)
+	&.butn-orange
+		min-width: 207px
+		position: relative
+		background-color: #f09826
+		border-radius: 6px
+		padding: 10px 14px 10px 64px
+		font-size: 18px
+		font-weight: 700
+		overflow: hidden
+		&:hover
+			background-color: #ef8700
+			&:before
+				background-color: #ff9a16
+		&:active
+			background-color: #f09826
+			&:before
+				background-color: #f3a43d
+		&:before
+			content: ""
+			position: absolute
+			width: 52px
+			top: 0
+			left: 0
+			bottom: 0
+			transition: .2s ease
+			border-radius: 6px 0 0 6px
+			background:
+				color: #f3a43d
+				image: url("../images/svg/STARbutton.svg")
+				position: 50% 50%
+				repeat: no-repeat
+/*Buttons END*/

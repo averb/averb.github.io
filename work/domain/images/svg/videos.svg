@@ -1,0 +1,50 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="76" viewBox="0 0 76 76">
+<defs>
+<linearGradient id="gradient1" gradientUnits="userSpaceOnUse" x1="50.000%" y1="100.000%" x2="50.000%" y2="0.000%" >
+<stop offset="0%" stop-color="#59C8FA" />
+<stop offset="73%" stop-color="#52EDC7" />
+<stop offset="100%" stop-color="#52EDC7" />
+</linearGradient>
+<filter id="Rectangle-16-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#FFFFFF" />
+<feComposite operator="in" in2="SourceAlpha" result="sourceFill" />
+<feBlend mode="normal" in="SourceGraphic" in2="sourceFill" result="gradientFill" />
+</filter>
+<linearGradient id="gradient2" gradientUnits="userSpaceOnUse" x1="50.000%" y1="31.579%" x2="50.000%" y2="0.000%" >
+<stop offset="0%" stop-color="#000000" />
+<stop offset="100%" stop-color="#303030" />
+</linearGradient>
+<filter id="Rectangle-14-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#000000" flood-opacity="0.160"/>
+<feComposite operator="in" in2="SourceAlpha" />
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="0.2" result="blur" />
+<feComposite operator="out" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feComposite operator="over" in="maskedShadow" in2="SourceGraphic" result="dropShadow"/>
+<feFlood flood-color="#000000" flood-opacity="0.800"/>
+<feComposite operator="in" in2="SourceAlpha" result="outGlowFill"/>
+<feMorphology operator="dilate" radius="2" result="outGlowFill" />
+<feGaussianBlur stdDeviation="0.2" result="outGlowBlur" />
+<feComposite operator="out" in="outGlowBlur" in2="SourceAlpha" result="outGlowMasked"/>
+<feComposite operator="over" in="outGlowMasked" in2="dropShadow" result="outerGlow"/>
+<feFlood flood-color="#000000" />
+<feComposite operator="in" in2="SourceAlpha" result="sourceFill" />
+<feBlend mode="normal" in="outerGlow" in2="sourceFill" result="gradientFill" />
+</filter>
+<linearGradient id="gradient3" gradientUnits="userSpaceOnUse" x1="50.000%" y1="0.000%" x2="50.000%" y2="31.579%" >
+<stop offset="0%" stop-color="#F7F7F7" />
+<stop offset="100%" stop-color="#F2F2F2" />
+</linearGradient>
+<filter id="Rectangle-15-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#FFFFFF" />
+<feComposite operator="in" in2="SourceAlpha" result="sourceFill" />
+<feBlend mode="normal" in="SourceGraphic" in2="sourceFill" result="gradientFill" />
+</filter>
+</defs>
+<g id="videos">
+<path id="Rounded-Rectangl" d="M4.000,0.000 C4.000,0.000 72.000,0.000 72.000,0.000 C74.209,0.000 76.000,1.791 76.000,4.000 C76.000,4.000 76.000,72.000 76.000,72.000 C76.000,74.209 74.209,76.000 72.000,76.000 C72.000,76.000 4.000,76.000 4.000,76.000 C1.791,76.000 0.000,74.209 0.000,72.000 C0.000,72.000 0.000,4.000 0.000,4.000 C0.000,1.791 1.791,0.000 4.000,0.000 z" fill="#0088CC" />
+<path id="Rectangle-16" d="M76.000,4.000 C76.000,4.000 76.000,72.000 76.000,72.000 C76.000,74.209 74.209,76.000 72.000,76.000 C72.000,76.000 4.000,76.000 4.000,76.000 C1.791,76.000 0.000,74.209 0.000,72.000 C0.000,72.000 0.000,4.000 0.000,4.000 C0.000,1.791 1.791,0.000 4.000,0.000 C4.000,0.000 72.000,0.000 72.000,0.000 C74.209,0.000 76.000,1.791 76.000,4.000 z" fill="url(#gradient1)" filter="url(#Rectangle-16-fx)" />
+<path id="Rectangle-14" d="M76.000,4.000 C76.000,4.000 76.000,23.438 76.000,23.438 L0.000,23.438 C0.000,23.438 0.000,4.000 0.000,4.000 C0.000,1.791 1.791,0.000 4.000,0.000 C4.000,0.000 72.000,0.000 72.000,0.000 C74.209,0.000 76.000,1.791 76.000,4.000 z" fill="url(#gradient2)" filter="url(#Rectangle-14-fx)" />
+<path id="Rectangle-15" d="M52.688,-0.000 L66.609,-0.000 L76.000,9.398 L76.000,11.400 L64.078,11.400 L52.688,-0.000 zM66.609,23.433 L52.688,23.433 L64.078,12.033 L76.000,12.033 L76.000,14.035 L66.609,23.433 zM51.422,11.400 L37.500,11.400 L26.109,-0.000 L40.031,-0.000 L51.422,11.400 zM0.000,22.964 L10.922,12.033 L24.844,12.033 L13.453,23.433 L0.000,23.433 L0.000,22.964 zM37.500,12.033 L51.422,12.033 L40.031,23.433 L26.109,23.433 L37.500,12.033 zM24.844,11.400 L10.922,11.400 C10.922,11.400 0.959,1.429 0.959,1.429 C1.693,0.562 2.775,-0.000 4.000,-0.000 C4.000,-0.000 13.453,-0.000 13.453,-0.000 L24.844,11.400 z" fill="url(#gradient3)" filter="url(#Rectangle-15-fx)" />
+</g>
+</svg>

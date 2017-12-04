@@ -1,0 +1,17 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="76" viewBox="0 0 76 76">
+<defs>
+<linearGradient id="gradient1" gradientUnits="userSpaceOnUse" x1="50.000%" y1="100.000%" x2="50.000%" y2="0.000%" >
+<stop offset="0%" stop-color="#01B41F" />
+<stop offset="100%" stop-color="#67FF81" />
+</linearGradient>
+<filter id="Rounded-Rectangl-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#0088CC" />
+<feComposite operator="in" in2="SourceAlpha" result="sourceFill" />
+<feBlend mode="normal" in="SourceGraphic" in2="sourceFill" result="gradientFill" />
+</filter>
+</defs>
+<g id="messages">
+<path id="Rounded-Rectangl" d="M4.000,0.000 C4.000,0.000 72.000,0.000 72.000,0.000 C74.209,0.000 76.000,1.791 76.000,4.000 C76.000,4.000 76.000,72.000 76.000,72.000 C76.000,74.209 74.209,76.000 72.000,76.000 C72.000,76.000 4.000,76.000 4.000,76.000 C1.791,76.000 0.000,74.209 0.000,72.000 C0.000,72.000 0.000,4.000 0.000,4.000 C0.000,1.791 1.791,0.000 4.000,0.000 z" fill="url(#gradient1)" filter="url(#Rounded-Rectangl-fx)" />
+<path id="Chat-bubble" d="M38.500,58.750 C36.632,58.750 34.809,58.575 33.045,58.252 C31.773,58.167 29.490,58.247 27.541,59.562 C25.105,61.205 21.509,62.233 20.405,61.784 C20.272,61.730 23.349,58.831 23.919,57.079 C24.299,55.910 24.041,55.250 23.728,54.881 C16.083,50.591 11.000,43.302 11.000,35.937 C11.000,23.338 23.312,13.125 38.500,13.125 C53.688,13.125 66.000,23.338 66.000,35.937 C66.000,48.536 53.688,58.750 38.500,58.750 z" fill="#FFFFFF" />
+</g>
+</svg>

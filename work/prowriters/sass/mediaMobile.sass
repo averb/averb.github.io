@@ -1,0 +1,482 @@
+@media (max-width: 760px)
+	h1, h2.like-h1
+		font-size: 28px
+	h2
+		font-size: 26px
+	h3
+		font-size: 24px
+	h4
+		font-size: 22px
+	main
+		margin-top: 52px
+
+	.def-width
+		padding-right: 20px
+		padding-left: 20px
+	.show-in-mob
+		display: block
+	.home-header
+		background-color: #fff
+		border-bottom: 1px solid #cfcfcf
+		.logo
+			a
+				color: #333
+		.main-nav > ul > li a
+			color: #333
+	header
+		.def-width
+			position: relative
+			padding-top: 10px
+			padding-bottom: 10px
+		.login
+			display: none
+	/*Nav toggler*/
+	.nav-toggler
+		position: relative
+		cursor: pointer
+		width: 20px
+		height: 20px
+		overflow: hidden
+		&:before
+			content: ''
+			position: absolute
+			top: 0px
+			left: 0
+			height: 3px
+			width: 20px
+			background-color: #3d913d
+			transition: transform .2s
+		&:after
+			content: ''
+			position: absolute
+			top: 14px
+			left: 0
+			height: 3px
+			width: 20px
+			background-color: #3d913d
+			transition: transform .2s
+
+		&.nav-toggler--open
+			.nav-lines
+				transform: scale(0, 0)
+			&:before
+				transform: rotate(45deg) translate(5px, 5px)
+			&:after
+				transform: rotate(-45deg) translate(5px, -5px)
+
+	.nav-lines
+		display: block
+		position: relative
+		top: 7px
+		width: 20px
+		height: 3px
+		background-color: #3d913d
+		transition: transform .2s
+	/*Main nav*/
+	header
+		&.header-scroll
+			.def-width .logo a
+				transform: scale(1, 1)
+		.main-nav
+			position: absolute
+			top: 102%
+			left: 0
+			right: 0
+			bottom: 0
+			height: 100vh
+			z-index: 999
+			transform: translate(-200%, 0)
+			transition: 0.6s ease
+			ul
+				flex-direction: column
+				position: fixed
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				overflow: auto
+				padding-top: 20px
+				padding-bottom: 80px
+				align-items: center
+				li
+					transition: opacity 0.6s
+					opacity: 0
+					margin-right: 0
+					text-align: center
+					&.login
+						display: block
+						font-size: 20px
+						padding: 8px 0
+						color: #333
+					a
+						display: block
+						color: #333
+						font-size: 20px
+						padding: 8px 0
+						border-bottom: 0
+						&.active
+							border-radius: 18px
+							padding: 3px 36px
+			&:before
+				content: ''
+				position: fixed
+				top: 0
+				left: -160px
+				right: 0
+				bottom: 0
+				background-color: #fff
+				z-index: -1
+				transform: translateX(-200%)
+				transition: 0.4s ease
+			&.main-nav--open
+				transform: translate(0%, 0%)
+				ul
+					li
+						opacity: 1
+				&:before
+					transform: translateX(0%)
+
+	.home__lid
+		.def-width
+			padding-top: 76px
+			padding-bottom: 44px
+		h2
+			font-size: 20px
+			line-height: 36px
+			margin-bottom: 6px
+		p
+			font-size: 16px
+			margin-bottom: 32px
+
+		ul
+			flex-direction: column
+			max-width: 220px
+			margin: 0 auto 12px
+			li
+				margin-bottom: 20px
+				&:after
+					display: none
+	
+	.home__offer
+		h2
+			margin-bottom: 16px
+	
+	.home__offer-left
+		ul
+			flex-direction: column
+			margin-bottom: 30px
+			li
+				flex: none
+				margin: 0
+				box-shadow: none
+				background-color: #fafafa
+
+	.home__stat
+		.def-width
+			padding-left: 0
+			padding-right: 0
+
+	.home__stat-content
+		flex-direction: column
+	
+	.home__stat-left
+		margin: 0 auto 30px
+
+	.home__stat-right
+		background-color: #fafafa
+		border-top: 1px solid #e7e7e7
+		padding: 26px 20px
+		overflow: hidden
+
+	.home__stat-right-cont,
+	.cities__stat-right-cont
+		margin: 0 auto
+		overflow: auto
+		max-width: 100%
+		ul
+			width: 450px
+			margin: 0 auto
+
+	.home__currently
+		background-size: cover
+		h2
+			flex-direction: column
+			font-size: 28px
+			img
+				display: none
+				
+	.more-list
+		color: #fff
+		font-weight: 600
+		text-decoration: underline
+		text-align: center
+		margin-bottom: 22px
+		&:hover
+			text-decoration: none
+
+	.home__currently-content
+		flex-direction: column
+		align-items: stretch
+		margin-bottom: 20px
+		ul
+			&:last-child
+				li
+					&:last-child
+						margin-bottom: 0
+			li
+				&:last-child
+					margin-bottom: 20px
+	
+	.roll-up
+		height: 145px
+		overflow: hidden
+		&.roll-down
+			height: 100%
+	.home__stat
+		h2
+			margin-bottom: 24px
+
+	.show-in-tab
+		.soc-icons
+			display: none
+
+	.about__gls-miss
+		margin-bottom: 40px
+
+	.about__gls
+		margin-bottom: 30px
+		margin-right: 0
+
+	.about__dream-left
+		display: none
+	
+	ul.check-list li
+		padding-left: 44px
+		line-height: 26px
+
+	.send-mail
+		.butn-yellow
+			min-width: 77px
+			padding: 11px
+
+	.about__how
+		h1
+			margin-bottom: 20px
+	
+	.pricing__depend-content
+		flex-direction: column
+		margin-bottom: 30px
+		ol
+			order: 2
+			li
+				margin-bottom: 18px
+		img
+			order: 1
+	
+	.pricing__table
+		overflow: auto
+		&::-webkit-scrollbar-thumb  
+			background-color: #4faf4f
+		ul
+			li
+				padding: 16px 24px
+	
+	.pricing__wrapper
+		position: relative
+		overflow: hidden
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			box-shadow: 0 0 34px 4px rgba(0, 0, 0, 0.7)
+	
+	.pricing__categ-content
+		flex-direction: column
+
+	.pricing__categ-img
+		margin-right: 0
+		margin-bottom: 20px
+	
+	.faq__accordion
+		h6
+			font-size: 14px
+			line-height: 20px
+			padding: 8px 26px 8px 40px
+	
+	.contact__content ul li
+		font-size: 18px
+	
+	.registration__content
+		.input-cover,
+		.select-style
+			max-width: 100%
+		> ul
+			flex-direction: column
+			> li
+				&:nth-child(1)
+					margin-bottom: 13px
+				&:nth-child(2)
+					justify-content: flex-start
+		label
+			font-size: 12px
+		.checkboxes
+			flex-direction: column
+		.select-dropdown__content
+			flex-wrap: wrap
+
+	.cities__stat-content
+		flex-direction: column
+
+	.cities__stat-left
+		margin: 0 auto 30px
+
+	.cities__stat-right
+		overflow: hidden
+	
+	.cities-list
+		margin: 20px 0
+		ul
+			li
+				&:last-child
+					margin-bottom: 20px
+	
+	.cities__lid
+		.def-width
+			padding-top: 40px
+		&.pakistan__lid
+			background-size: cover
+			background-position: 50% 0
+
+	.cities__stat
+		h2
+			margin-bottom: 24px
+		.send-mail
+			margin: 66px auto 50px
+	
+	.passreset h1
+		margin-top: 22px
+
+	.cities-list
+		flex-direction: column
+		ul
+			&:last-child
+				li
+					&:last-child
+						margin-bottom: 0
+
+@media (max-width: 624px)
+	.home__offer-right
+		width: calc(100%)
+		position: relative
+		overflow: hidden
+		&:after
+			content: ""
+			position: absolute
+			top: 100px
+			right: 0
+			bottom: 0
+			box-shadow: 0 0 34px 4px rgba(0, 0, 0, 0.7)
+
+	.contact__form
+		padding: 20px 20px 25px
+
+	.contact__form-top
+		flex-direction: column
+		margin-bottom: 20px
+	
+	.contact__form-bottom
+		textarea
+			margin-bottom: 10px
+
+	.contact__content
+		ul
+			flex-direction: column
+			li
+				margin-bottom: 10px
+		.input-cover
+			&:first-child
+				margin-right: 0
+				margin-bottom: 20px
+
+	.login-modal__head
+		padding: 14px 30px 14px 20px
+
+	.login-modal__closer
+		right: 20px
+
+	.login-modal__content
+		padding: 20px 20px 10px
+	
+	footer
+		.def-width
+			flex-wrap: wrap
+			> ul
+				width: calc(50% - 0px)
+				&:nth-child(3)
+					width: calc(100% - 0px)
+					padding-left: 0
+					margin-top: 20px
+					&:after
+						display: none
+				li
+					a
+						font-size: 12px
+
+	.registration__content
+		.radios
+			flex-direction: column
+			ul
+				li
+					margin-bottom: 10px
+
+@media (max-width: 490px)
+	.home__stat-right-wrapper,
+	.cities__stat-right-wrapper
+		position: relative
+		overflow: hidden
+		&:after
+			content: ""
+			position: absolute
+			top: 0
+			right: 0
+			bottom: 0
+			box-shadow: 0 0 34px 4px rgba(0, 0, 0, 0.7)
+
+	.home__stat
+		.def-width
+			.send-mail
+				margin: 42px 20px 0
+				.butn-yellow
+					min-width: 77px
+					padding: 11px
+	.bunner-one
+		flex-direction: column
+		text-align: center
+		padding: 20px
+
+	.bunner-one__text
+		margin-right: 0
+		h5
+			margin-bottom: 10px
+		p
+			margin-bottom: 10px
+
+	.registration__content
+		> ul
+			p
+				text-align: left
+				margin-right: 0
+				margin-bottom: 10px
+			> li
+				flex-direction: column
+				align-items: stretch
+
+	.registration__bottom-cont
+		width: calc(100% - 0px)
+	
+	.cities__stat
+		padding: 0
+
+
