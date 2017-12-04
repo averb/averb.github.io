@@ -1,0 +1,13 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="21" viewBox="0 0 20 21">
+<defs>
+<filter id="icon-messenger-b-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#0A62BB" flood-opacity="1.000"/>
+<feComposite operator="in" in2="SourceAlpha" />
+<feOffset dx="0" dy="1"/>
+<feGaussianBlur stdDeviation="0.0" result="blur" />
+<feComposite operator="out" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feComposite operator="over" in="maskedShadow" in2="SourceGraphic" result="dropShadow"/>
+</filter>
+</defs>
+<path id="icon-messenger-b" d="M10.000,18.461 C8.981,18.461 7.997,18.321 7.071,18.059 C7.033,18.077 3.769,19.999 3.769,19.999 C3.769,19.999 3.692,17.207 3.692,16.461 C1.338,14.772 -0.000,12.195 -0.000,9.230 C-0.000,4.133 4.477,-0.001 10.000,-0.001 C15.523,-0.001 20.000,4.133 20.000,9.230 C20.000,14.328 15.523,18.461 10.000,18.461 zM11.538,9.230 L8.923,6.615 L3.692,12.307 L8.462,9.846 L11.077,12.307 L16.308,6.769 L11.538,9.230 z" fill="#FFFFFF" filter="url(#icon-messenger-b-fx)" />
+</svg>

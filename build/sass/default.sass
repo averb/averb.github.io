@@ -10,10 +10,13 @@ body
   flex-direction: column
   min-height: 100vh
   position: relative
-  background-color: $backgroundColor
 
 main
   flex-grow: 1
+
+section
+  padding-top: $spacerXl
+  padding-bottom: $spacerXl
 
 h1, h2, h3
   color: $fontColor
@@ -21,37 +24,21 @@ h1, h2, h3
   line-height: 1.4
 
 h1
-  font-size: 40px
+  font-size: 50px
+  margin-bottom: $spacer
 
 h2
-  font-size: 34px
-
-h3
-  font-size: 26px
-
-strong
-  font-weight: 700
-
-button
-  border: 0
-  padding: 0
-  outline: 0
-  cursor: pointer
+  font-size: 44px
+  margin-bottom: $spacer
 
 a
   display: inline-block
   color: $linkColor
-  text-decoration: underline
+  text-decoration: none
   transition: all .1s ease
   cursor: pointer
+  border-bottom: 1px solid currentColor
 
-  &:hover
-    text-decoration: none
-  &:active
-    text-decoration: none
-  &:focus
-    text-decoration: none
-
-section
-  padding-top: $spacerLg
-  padding-bottom: $spacerLg
+  &:hover, &:active, &:focus
+    border-color: transparent
+    color: $blue

@@ -1,0 +1,13 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="21" viewBox="0 0 20 21">
+<defs>
+<filter id="icon-fb-button-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#2F4980" flood-opacity="1.000"/>
+<feComposite operator="in" in2="SourceAlpha" />
+<feOffset dx="0" dy="1"/>
+<feGaussianBlur stdDeviation="0.0" result="blur" />
+<feComposite operator="out" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feComposite operator="over" in="maskedShadow" in2="SourceGraphic" result="dropShadow"/>
+</filter>
+</defs>
+<path id="icon-fb-button" d="M17.891,-0.008 C17.891,-0.008 2.109,-0.008 2.109,-0.008 C1.499,-0.008 0.007,1.486 0.007,2.096 C0.007,2.096 0.007,17.903 0.007,17.903 C0.007,18.513 1.499,20.007 2.109,20.007 C2.109,20.007 10.683,20.007 10.683,20.007 L10.683,12.247 L8.068,12.247 L8.068,9.237 L10.683,9.237 C10.683,9.237 10.683,7.008 10.683,7.008 C10.683,4.422 12.259,3.022 14.562,3.022 C15.665,3.022 16.614,3.097 16.890,3.134 C16.890,3.134 16.890,5.837 16.890,5.837 C16.890,5.837 15.293,5.836 15.293,5.836 C14.040,5.836 13.806,6.432 13.806,7.307 C13.806,7.307 13.806,9.237 13.806,9.237 L16.785,9.237 L16.396,12.247 L13.806,12.247 L13.806,20.007 C13.806,20.007 17.891,20.007 17.891,20.007 C18.500,20.007 19.994,18.513 19.994,17.903 C19.994,17.903 19.994,2.096 19.994,2.096 C19.994,1.486 18.500,-0.008 17.891,-0.008 z" fill="#FFFFFF" filter="url(#icon-fb-button-fx)" />
+</svg>

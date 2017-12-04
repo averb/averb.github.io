@@ -1,0 +1,28 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="26" viewBox="0 0 27 26">
+<defs>
+<linearGradient id="gradient1" gradientUnits="userSpaceOnUse" x1="50.000%" y1="100.000%" x2="50.000%" y2="0.000%" >
+<stop offset="0%" stop-color="#0960BA" />
+<stop offset="100%" stop-color="#06A5F7" />
+</linearGradient>
+<linearGradient id="gradient2" gradientUnits="userSpaceOnUse" x1="50.000%" y1="100.000%" x2="50.000%" y2="0.000%" >
+<stop offset="0%" stop-color="#0074FF" />
+<stop offset="100%" stop-color="#06AAF6" />
+</linearGradient>
+
+<filter id="icon-star-fill-fx" filterUnits="userSpaceOnUse">
+<feFlood flood-color="#2295F4" />
+<feComposite operator="in" in2="SourceAlpha" result="sourceFill" />
+<feBlend mode="normal" in="SourceGraphic" in2="sourceFill" result="gradientFill" />
+<feFlood flood-color="#FFFFFF" flood-opacity="0.300"/>
+<feComposite operator="out" in2="SourceAlpha"/>
+<feOffset dx="0" dy="2"/>
+<feGaussianBlur stdDeviation="0.2" result="blur" />
+<feComposite operator="in" in="blur" in2="SourceAlpha" result="maskedShadow"/>
+<feBlend mode="normal" in="maskedShadow" in2="gradientFill" result="innerShadow"/>
+</filter>
+</defs>
+<g id="icon-star" >
+<path id="icon-star-fill" d="M13.500,-0.000 L17.949,8.170 L26.998,9.931 L20.699,16.740 L21.842,25.999 L13.500,22.037 L5.157,25.999 L6.301,16.740 L0.002,9.931 L9.051,8.170 L13.500,-0.000 " fill="url(#gradient2)" filter="url(#icon-star-fill-fx)" />
+<path id="icon-star-stroke" d="M13.500,-0.000 L17.949,8.170 L26.998,9.931 L20.699,16.740 L21.842,25.999 L13.500,22.037 L5.157,25.999 L6.301,16.740 L0.002,9.931 L9.051,8.170 L13.500,-0.000 " fill="none" stroke="url(#gradient1)" stroke-opacity="1.000" stroke-width="1" />
+</g>
+</svg>
