@@ -15,21 +15,23 @@ main
   flex-grow: 1
 
 section
-  padding-top: $spacerXl
-  padding-bottom: $spacerXl
+  padding-top: $spacerLg
+  padding-bottom: $spacerLg
 
-h1, h2, h3
-  color: $fontColor
-  font-weight: 500
-  line-height: 1.4
-
-h1
-  font-size: 50px
-  margin-bottom: $spacer
+  @media (min-width: 700px)
+    padding-top: $spacerXl
+    padding-bottom: $spacerXl
 
 h2
-  font-size: 44px
-  margin-bottom: $spacer
+  font-size: 34px
+  font-weight: 500
+  line-height: 1.4
+  color: $fontColor
+  margin-bottom: $spacerSm
+
+  @media (min-width: 1024px)
+    margin-bottom: $spacer
+    font-size: 44px
 
 a
   display: inline-block

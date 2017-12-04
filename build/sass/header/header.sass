@@ -7,9 +7,12 @@
   background-color: rgba(#fff, .7)
 
   &__inner
-    display: flex
+    display: block
     align-items: center
     justify-content: space-between
+
+    @media (min-width: 700px)
+      display: flex
 
 
 .header-nav
@@ -17,16 +20,21 @@
     display: flex
     align-items: center
     flex-wrap: wrap
-    margin-left: -$spacer
-    margin-right: -$spacer
+    justify-content: center
 
-    &-item
+    @media (min-width: 700px)
+      margin-left: -$spacer
+      margin-right: -$spacer
 
     &-link
       display: block
       text-transform: uppercase
       border: none
-      padding: $spacerSm $spacer
+      padding: $spacerSm
+
+      @media (min-width: 700px)
+        padding: $spacer
+
 
       & .social
         display: block
@@ -42,8 +50,20 @@
         & .social, & .logo
           filter: drop-shadow(0 3px 2px rgba(#D3D2CF, 0.7))
 
+  &__logo
+    order: 2
+    @media (min-width: 700px)
+      order: 0
+
+  &__work
+    order: 3
+    @media (min-width: 700px)
+      order: 0
+
+
+
 .logo
   display: block
   width: 80px
-  height: 80px
+  height: 40px
   fill: currentColor

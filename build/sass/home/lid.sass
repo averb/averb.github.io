@@ -1,37 +1,59 @@
 .lid
-  height: 100vh
   position: relative
-  padding-top: 0
-  padding-bottom: 0
+  padding-top: 137px
+  padding-bottom: $spacerLg
+
+  @media (min-width: 800px)
+    height: 100vh
+    padding-top: 0
+    padding-bottom: 0
+
 
   &__triangels
     height: 100vh
     flex-shrink: 0
     margin-right: $spacer
     fill: currentColor
+    display: none
+
+    @media (min-width: 800px)
+      display: block
 
     &-wrap
-      position: absolute
-      top: 0
-      right: 40%
+      @media (min-width: 800px)
+        position: absolute
+        top: 0
+        right: 40%
 
   &__titles
     font-weight: 500
-    // text-transform: uppercase
     line-height: 1.2
-    position: absolute
-    top: 31vh
-    left: 66%
-    white-space: nowrap
+
+    @media (min-width: 800px)
+      white-space: nowrap
+      position: absolute
+      left: 66%
+      bottom: 46vh
+
 
   &__title
-    font-size: 11vh
+    font-size: 40px
+    @media (min-width: 800px)
+      font-size: 11vmin
 
   &__subtitle
-    font-size: 8vh
+    font-size: 34px
+    @media (min-width: 800px)
+      font-size: 8vmin
 
   &__text
-    font-size: 4vh
     font-weight: 100
-    padding-top: 56.5vh
-    padding-left: 60%
+    font-size: 24px
+    margin-top: $spacerSm
+    margin-bottom: 0
+
+    @media (min-width: 800px)
+      margin-top: 0
+      font-size: 4vmin
+      padding-top: 56.5vh
+      padding-left: 60%

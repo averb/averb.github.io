@@ -9,21 +9,6 @@ var gulp = require('gulp'),
 	connect = require('gulp-connect'),
 	htmlImport = require('gulp-html-import'),
 	minify = require('gulp-minify');
-	// concat = require('gulp-concat')
-
-// Minify js to one file
-// gulp.task('concat', function() {
-// 	gulp.src([
-//     'js/jquery-3.1.1.min.js',
-//     'js/jquery-datepicker.min.js',
-//     'js/smallScripts.js',
-//   ])
-// 		.pipe(concat('scripts.js'))
-// 		.pipe(minify({
-// 			ext:{min:'.min.js'}
-// 		}))
-// 		.pipe(gulp.dest('js/'));
-// });
 
 // CSS Optimizer
 gulp.task('csso', function () {
@@ -68,7 +53,7 @@ gulp.task('sass', function () {
 // Watcher
 gulp.task('watch', function () {
 	gulp.watch('build/sass/**/*.sass', ['sass']);
-	//gulp.watch('css/main.css', ['gcmq']);
+	gulp.watch('css/main.css', ['gcmq']);
 	gulp.watch('build/**/*.html', ['import']);
 });
 
