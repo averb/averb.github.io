@@ -12,18 +12,18 @@
     width: 70%
     margin: 0 auto $spacer
 
+    &-eye
+      opacity: 0
+
     @media (min-width: 700px)
       width: 40%
       margin: 0
 
-      &-eye
-        opacity: 0
-
     &:hover
       & .about__avatar-eye
-        animation-name: anim-eye;
-        animation-duration: 0.4s;
-        animation-fill-mode: forwards;
+        animation-name: anim-eye
+        animation-duration: 0.4s
+        animation-fill-mode: forwards
 
   &__text
     max-width: 800px

@@ -283,6 +283,10 @@ a:focus {
   margin: 0 auto 24px;
 }
 
+.about__avatar-eye {
+  opacity: 0;
+}
+
 .about__avatar:hover .about__avatar-eye {
   -webkit-animation-name: anim-eye;
   animation-name: anim-eye;
@@ -482,10 +486,6 @@ a:focus {
   .about__avatar {
     width: 40%;
     margin: 0;
-  }
-
-  .about__avatar-eye {
-    opacity: 0;
   }
 
   .about__text {
