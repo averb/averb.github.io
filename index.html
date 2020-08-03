@@ -136,13 +136,27 @@
       <clipPath id="avatar">
         <rect x="71.59" y="71.78" width="342.25" height="342.25" transform="translate(-100.67 242.58) rotate(-45)"/>
       </clipPath>
+      <filter id="grayscale">
+        <feColorMatrix type="matrix" values=".33 .33 .33 0 0 .33 .33 .33 0 0 .33 .33 .33 0 0 0 0 0 1 0" />
+      </filter>
       <image
-        xlink:href="img/avatar.jpg"
+        xlink:href="img/avatar.png"
         width="100%"
         height="100%"
         x="0"
         y="0"
         clip-path="url(#avatar)"
+        filter="url(#grayscale)"
+      />
+      <image
+        xlink:href="img/avatar_eye.png"
+        width="100%"
+        height="100%"
+        x="0"
+        y="0"
+        clip-path="url(#avatar)"
+        filter="url(#grayscale)"
+        class="about__avatar-eye"
       />
     </svg>
 

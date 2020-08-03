@@ -11,15 +11,15 @@
     "css",
     "html"
   ],
-  "author": "Andrew",
+  "author": "Andrew Verbenets",
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-concat": "^2.6.1",
-    "gulp-connect": "^5.0.0",
+    "gulp-connect": "^5.7.0",
     "gulp-csso": "^3.0.0",
-    "gulp-group-css-media-queries": "^1.2.0",
+    "gulp-group-css-media-queries": "^1.2.2",
     "gulp-html-import": "0.0.2",
     "gulp-minify": "^2.1.0",
     "gulp-sass": "^3.1.0",
