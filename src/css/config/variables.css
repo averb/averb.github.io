@@ -1,0 +1,23 @@
+:root {
+  --main-font: "BlinkMacSystemFont", -apple-system, "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --font-size: 18px;
+  --font-weight: 400;
+  --line-height: 1.5;
+  --font-color: #575352;
+  --background-color: #fbfbfb;
+  --link-color: #575352;
+
+  /* Palette */
+  --light: #fbfbfb;
+  --gray: #fafafa;
+  --dark: #575352;
+  --blue: #2196f3;
+
+  /* Spacers */
+  --spacer-xs: 6px;
+  --spacer-sm: 12px;
+  --spacer: 24px;
+  --spacer-lg: 48px;
+  --spacer-xl: 100px;
+}

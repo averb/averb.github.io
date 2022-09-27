@@ -1,0 +1,17 @@
+.main-footer {
+  background-color: var(--gray);
+  text-align: center;
+  padding-top: var(--spacer);
+  padding-bottom: var(--spacer);
+}
+
+@media (min-width: 500px) {
+  .main-footer {
+    padding-top: var(--spacer-lg);
+    padding-bottom: var(--spacer-lg);
+  }
+}
+
+.main-footer .logo {
+  margin: 0 auto var(--spacer-sm);
+}

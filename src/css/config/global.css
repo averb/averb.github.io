@@ -1,0 +1,10 @@
+.grid {
+  padding-left: var(--spacer-sm);
+  padding-right: var(--spacer-sm);
+}
+@media (min-width: 700px) {
+  .grid {
+    padding-left: var(--spacer);
+    padding-right: var(--spacer);
+  }
+}
