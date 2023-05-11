@@ -1,0 +1,30 @@
+.wrapper {
+  max-width: 50rem;
+  padding-inline: var(--space-8);
+  margin-inline: auto;
+}
+
+.wrapper--full {
+  max-width: none;
+}
+
+.wrapper--text-center {
+  text-align: center;
+}
+
+.list {
+  list-style: inside;
+  margin-bottom: 1.5rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}

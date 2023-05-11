@@ -1,0 +1,129 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background-color: rgb(255 255 255 / 70%);
+  backdrop-filter: blur(0.5rem);
+}
+
+.header__inner {
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--space-2-5);
+}
+
+@media (min-width: 42rem) {
+  .header__inner {
+    display: flex;
+    padding-block: 0;
+  }
+}
+
+.header__logo {
+  display: block;
+  width: 3.5rem;
+  fill: currentcolor;
+}
+
+@media (min-width: 42rem) {
+  .header__logo {
+    width: 4rem;
+  }
+}
+
+.header-nav {
+  font-weight: 300;
+}
+
+.header-nav__list,
+.header-social-icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.header__link {
+  display: block;
+  text-transform: uppercase;
+  border: none;
+  padding: var(--space-2-5) var(--space-3);
+  font-size: 1rem;
+}
+
+@media (min-width: 42rem) {
+  .header__link {
+    padding: var(--space-5);
+  }
+}
+
+.header__social {
+  position: relative;
+}
+
+.header__social-icon {
+  display: block;
+  fill: currentcolor;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.header__social-text {
+  font-size: 0.625rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  font-weight: 700;
+}
+
+.header__social:hover .header__social-text {
+  opacity: 1;
+}
+
+@media (min-width: 42rem) {
+  .header__social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.header__link:hover {
+  transform: translateY(-3px);
+  color: var(--blue);
+}
+
+.header-nav__list-logo {
+  order: 2;
+}
+
+@media (min-width: 42rem) {
+  .header-nav__list-logo {
+    order: 0;
+  }
+}
+
+.header-nav__list-about {
+  order: 1;
+}
+
+@media (min-width: 42rem) {
+  .header-nav__list-about {
+    order: 0;
+  }
+}
+
+.header-nav__list-work {
+  order: 3;
+}
+
+@media (min-width: 42rem) {
+  .header-nav__list-work {
+    order: 0;
+  }
+}
