@@ -10,7 +10,7 @@ const optimizeCss = () => {
 }
 
 const importComponents = () => {
-  return src('./src/*.html')
+  return src('./src/index.html')
     .pipe(htmlImport('./src/components/'))
     .pipe(dest('./'))
 }
@@ -33,7 +33,7 @@ const concatCss = () => {
     './src/css/config/variables.css',
     './src/css/config/default.css',
     './src/css/config/global.css',
-    './src/css/components/**/*.css'
+    './src/css/components/*.css'
   ])
     .pipe(concat('main.css'))
     .pipe(dest('./css'))
@@ -41,7 +41,7 @@ const concatCss = () => {
 
 const watchFiles = () => {
   watch('./src/css/**/*.css', concatCss)
-  watch('./src/components/*.html', importComponents)
+  watch('./src/**/*.html', importComponents)
 }
 
 exports.default = parallel(runServer, watchFiles)

@@ -1,116 +1,129 @@
-.main-header {
+.header {
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
   z-index: 99;
   background-color: rgb(255 255 255 / 70%);
+  backdrop-filter: blur(0.5rem);
 }
 
-.main-header__inner {
+.header__inner {
   display: block;
   align-items: center;
   justify-content: space-between;
+  padding-block: var(--space-2-5);
 }
 
-@media (min-width: 700px) {
-  .main-header__inner {
+@media (min-width: 42rem) {
+  .header__inner {
     display: flex;
+    padding-block: 0;
   }
 }
 
-.logo {
+.header__logo {
   display: block;
-  width: 60px;
+  width: 3.5rem;
   fill: currentcolor;
 }
 
-@media (min-width: 700px) {
-  .logo {
-    width: 80px;
+@media (min-width: 42rem) {
+  .header__logo {
+    width: 4rem;
   }
 }
 
-.header-list {
+.header-nav {
+  font-weight: 300;
+}
+
+.header-nav__list,
+.header-social-icons {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-@media (min-width: 700px) {
-  .header-list {
-    margin-left: calc(var(--spacer) * -1);
-    margin-right: calc(var(--spacer) * -1);
-  }
-}
-
-.header-list__link {
+.header__link {
   display: block;
   text-transform: uppercase;
   border: none;
-  padding: var(--spacer-sm);
-  font-size: 16px;
+  padding: var(--space-2-5) var(--space-3);
+  font-size: 1rem;
 }
 
-@media (min-width: 700px) {
-  .header-list__link {
-    padding: var(--spacer);
-    font-size: 18px;
+@media (min-width: 42rem) {
+  .header__link {
+    padding: var(--space-5);
   }
 }
 
-.header-list__link .social {
+.header__social {
+  position: relative;
+}
+
+.header__social-icon {
   display: block;
   fill: currentcolor;
-  width: 20px;
-  height: 20px;
+  width: 1.25rem;
+  height: 1.25rem;
 }
 
-@media (min-width: 700px) {
-  .header-list__link .social {
-    width: 26px;
-    height: 26px;
+.header__social-text {
+  font-size: 0.625rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.1s ease;
+  font-weight: 700;
+}
+
+.header__social:hover .header__social-text {
+  opacity: 1;
+}
+
+@media (min-width: 42rem) {
+  .header__social-icon {
+    width: 1.5rem;
+    height: 1.5rem;
   }
 }
 
-.header-list__link:hover {
-  text-shadow: 0 3px 2px rgb(211 210 207 / 70%);
+.header__link:hover {
   transform: translateY(-3px);
   color: var(--blue);
 }
 
-.header-list__link:hover .social,
-.header-list__link:hover .logo {
-  filter: drop-shadow(0 3px 2px rgb(211 210 207 / 70%));
-}
-
-.header-list__logo {
+.header-nav__list-logo {
   order: 2;
 }
 
-@media (min-width: 700px) {
-  .header-list__logo {
+@media (min-width: 42rem) {
+  .header-nav__list-logo {
     order: 0;
   }
 }
 
-.header-list__about {
+.header-nav__list-about {
   order: 1;
 }
 
-@media (min-width: 700px) {
-  .header-list__about {
+@media (min-width: 42rem) {
+  .header-nav__list-about {
     order: 0;
   }
 }
 
-.header-list__work {
+.header-nav__list-work {
   order: 3;
 }
 
-@media (min-width: 700px) {
-  .header-list__work {
+@media (min-width: 42rem) {
+  .header-nav__list-work {
     order: 0;
   }
 }

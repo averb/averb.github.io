@@ -1,0 +1,38 @@
+.about-avatar {
+  opacity: 0.9;
+}
+
+.about-avatar img {
+  display: block;
+  float: left;
+  width: 9rem;
+  height: 13.5rem;
+  border-radius: 0.25rem;
+  margin-right: var(--space-4);
+  object-fit: cover;
+  object-position: top;
+}
+
+@media (min-width: 42rem) {
+  .about-avatar img {
+    margin-right: var(--space-8);
+    width: 16rem;
+    height: 26rem;
+  }
+}
+
+.about-text > p {
+  margin-bottom: var(--space-3);
+}
+@media (min-width: 42rem) {
+  .about-text > p {
+    margin-bottom: var(--space-5);
+  }
+}
+
+.about-location {
+  display: inline-flex;
+  align-items: center;
+  column-gap: var(--space-1-5);
+  font-weight: 400;
+}

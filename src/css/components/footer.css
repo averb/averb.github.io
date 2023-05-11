@@ -1,17 +1,11 @@
 .main-footer {
-  background-color: var(--gray);
   text-align: center;
-  padding-top: var(--spacer);
-  padding-bottom: var(--spacer);
+  padding-block: var(--space-3);
+  font-size: 1rem;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 42rem) {
   .main-footer {
-    padding-top: var(--spacer-lg);
-    padding-bottom: var(--spacer-lg);
+    padding-block: var(--space-6);
   }
-}
-
-.main-footer .logo {
-  margin: 0 auto var(--spacer-sm);
 }
