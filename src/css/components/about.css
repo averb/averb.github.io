@@ -1,23 +1,25 @@
 .about-avatar {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .about-avatar img {
   display: block;
   float: left;
   width: 9rem;
-  height: 13.5rem;
+  height: 10.25rem;
   border-radius: 0.25rem;
+  margin-top: var(--space-2-5);
   margin-right: var(--space-4);
   object-fit: cover;
-  object-position: top;
+  object-position: center;
 }
 
 @media (min-width: 42rem) {
   .about-avatar img {
+    margin-top: var(--space-5);
     margin-right: var(--space-8);
     width: 16rem;
-    height: 26rem;
+    height: 23.875rem;
   }
 }
 

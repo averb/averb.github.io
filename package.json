@@ -3,7 +3,7 @@
   "name": "portfolio",
   "description": "averb's portfolio",
   "main": "index.html",
-  "author": "Andrew Verbenets",
+  "author": "Andrii Verbenets",
   "license": "ISC",
   "scripts": {
     "lint:css": "stylelint '**/*.css'",
