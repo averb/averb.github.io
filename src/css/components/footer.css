@@ -1,5 +1,17 @@
 .main-footer {
   text-align: center;
-  padding-block: var(--space-5);
-  font-size: 1rem;
+  padding-block: var(--space-3);
+  font-size: 0.75rem;
+}
+@media (min-width: 42rem) {
+  .main-footer {
+    font-size: 1.25rem;
+    padding-block: var(--space-5);
+  }
+}
+
+.main-footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

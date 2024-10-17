@@ -23,7 +23,7 @@
   }
 }
 
-.about-text > p {
+.about-text > p:not(:last-child) {
   margin-bottom: var(--space-3);
 }
 @media (min-width: 42rem) {

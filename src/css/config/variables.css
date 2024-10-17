@@ -1,5 +1,5 @@
 :root {
-  --main-font: 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Oxygen', 'Ubuntu',
+  --main-font: -apple-system, 'Roboto', 'Oxygen', 'Ubuntu',
     'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   --font-size: 1.5rem;
   --font-weight: 200;
@@ -38,4 +38,7 @@
   --space-17: 4.75rem; /* 76px */
   --space-18: 5.25rem; /* 84px */
   --space-19: 5.75rem; /* 92px */
+
+  /* Breakpoints */
+  --breakpoint-sm: 42rem; /* 672px */
 }

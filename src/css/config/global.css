@@ -1,7 +1,13 @@
 .wrapper {
+  width: 100%;
   max-width: 50rem;
-  padding-inline: var(--space-8);
+  padding-inline: var(--space-6);
   margin-inline: auto;
+}
+@media (min-width: 42rem) {
+  .wrapper {
+    padding-inline: var(--space-8);
+  }
 }
 
 .wrapper--full {
