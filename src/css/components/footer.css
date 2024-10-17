@@ -1,11 +1,11 @@
 .main-footer {
   text-align: center;
   padding-block: var(--space-3);
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
 @media (min-width: 42rem) {
   .main-footer {
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding-block: var(--space-5);
   }
 }
